@@ -1,0 +1,32 @@
+.marker {
+    background-image: url(../uni_icon.png);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+.mapboxgl-popup {
+    max-width: 200px;
+  }
+  
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+.mapboxgl-popup-content img {
+    max-width: 100%; /* Ajusta la imagen al ancho del contenedor del popup */
+    height: auto;    /* Mantiene la proporción de la imagen */
+    display: block;  /* Elimina el espacio debajo de la imagen */
+    margin: 0 auto;  /* Centra la imagen horizontalmente */
+  }
+
+.marker-tourist {
+    background-image: url(../tourist_icon.png);
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }

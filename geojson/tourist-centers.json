@@ -1,0 +1,76 @@
+{
+    "locations": [
+      {
+        "name": "Plaza de Armas",
+        "coordinates": [
+            -8.1117802,-79.028587
+        ]
+      },
+      {
+        "name": "Casa de la Emancipación",
+        "coordinates": [
+            -8.11063,-79.0264087
+        ]
+      },
+      {
+        "name": "Museo Arqueológico de la UNT",
+        "coordinates": [
+          -8.1108828,-79.0242538
+        ]
+      },
+      {
+        "name": "Museo de Juguetes",
+        "coordinates": [
+          -8.1083536,-79.0266418
+        ]
+      },
+      {
+        "name": "Jardín Botánico de Trujillo",
+        "coordinates": [
+          -8.1250383,-79.0369796
+        ]
+      },
+      {
+        "name": "Huaca del Sol y la Luna",
+        "coordinates": [
+          -8.1318668,-78.9971083
+        ]
+      },
+      {
+        "name": "Complejo Arqueológico El Brujo",
+        "coordinates": [
+          -7.9142046,-79.303688
+        ]
+      },
+      {
+        "name": "Chan Chan",
+        "coordinates": [
+          -8.106303, -79.074793
+        ]
+      },
+      {
+        "name": "Balneario de Huanchaco",
+        "coordinates": [
+          -8.075037, -79.119258
+        ]
+      },
+      {
+        "name": "Jardín de los Sentidos",
+        "coordinates": [
+          -8.1128788,-78.9917919
+        ]
+      },
+      {
+        "name": "Cerro Campana",
+        "coordinates": [
+          -7.9642492,-79.1101027
+        ]
+      },
+      {
+        "name": "Lagunda de Conache",
+        "coordinates": [
+          -8.127712, -78.953359
+        ]
+      }
+    ]
+  }
