@@ -29,7 +29,7 @@ map.on('load', () => {
     // Geojson's
     map.addSource('route', {
         'type': 'geojson',
-        'data': './geojson/map-tourist.geojson' 
+        'data': '/geojson/map-tourist.geojson' 
     });
 
     map.addLayer({
@@ -45,7 +45,7 @@ map.on('load', () => {
     
     map.addSource('uni', {
         'type': 'geojson',
-        'data': './geojson/map.geojson' 
+        'data': '/geojson/map.geojson' 
     })
 
     map.addLayer({
@@ -75,7 +75,7 @@ map.on('load', () => {
 
     // Marcadores para los centros turísticos
 
-    fetch('../geojson/tourist-centers.json')
+    fetch('/geojson/tourist-centers.json')
     .then(response => response.json())
     .then(data => {
         

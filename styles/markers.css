@@ -1,5 +1,5 @@
 .marker {
-    background-image: url(../uni_icon.png);
+    background-image: url(/uni_icon.png);
     background-size: cover;
     width: 40px;
     height: 40px;
@@ -23,7 +23,7 @@
   }
 
 .marker-tourist {
-    background-image: url(../tourist_icon.png);
+    background-image: url(/tourist_icon.png);
     background-size: cover;
     width: 40px;
     height: 40px;
