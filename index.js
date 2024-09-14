@@ -27,6 +27,7 @@ map.on('load', () => {
     });
 
     // Geojson's
+    // Lugares turísticos
     map.addSource('route', {
         'type': 'geojson',
         'data': '/geojson/map-tourist.geojson' 
@@ -43,6 +44,7 @@ map.on('load', () => {
         }
     });
     
+    // Universidad
     map.addSource('uni', {
         'type': 'geojson',
         'data': '/geojson/map.geojson' 
@@ -59,6 +61,24 @@ map.on('load', () => {
         }
     })
 
+    // Hoteles
+    map.addSource('hotel', {
+        'type': 'geojson',
+        'data': '/geojson/map-hotels.geojson' 
+    })
+
+    map.addLayer({
+        'id': 'hotel',
+        'type': 'fill',
+        'source': 'hotel',
+        'paint': {
+            // '#1abfdf' // #4e17a8 #ff610f
+            'fill-color': '#1abfdf',
+            'fill-opacity': 0.3,
+        }
+    })
+
+    // Marcadores
     // Marcador para la universidad
     const el = document.createElement('div');
     el.className = 'marker';    
@@ -74,14 +94,28 @@ map.on('load', () => {
     .addTo(map);
 
     // Marcadores para los centros turísticos
-
-    fetch('/geojson/tourist-centers.json')
+    fetch('/json/tourist-centers.json')
     .then(response => response.json())
     .then(data => {
         
         data.locations.forEach(location => {
         const el = document.createElement('div');
         el.className = 'marker-tourist'; 
+        new mapboxgl.Marker(el)
+            .setLngLat(location.coordinates.reverse())
+            .setPopup(new mapboxgl.Popup().setText(location.name))
+            .addTo(map);
+        });
+    });
+
+    // Marcadores para los hoteles
+    fetch('/json/hotels-centers.json')
+    .then(response => response.json())
+    .then(data => {
+        
+        data.locations.forEach(location => {
+        const el = document.createElement('div');
+        el.className = 'marker-hotel'; 
         new mapboxgl.Marker(el)
             .setLngLat(location.coordinates.reverse())
             .setPopup(new mapboxgl.Popup().setText(location.name))

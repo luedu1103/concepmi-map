@@ -1,0 +1,88 @@
+{
+    "locations": [
+      {
+        "name": "Hotel Country Trujillo",
+        "coordinates": [
+          -8.1390335,-79.0322432
+        ]
+      },
+      {
+        "name": "Hotel Costa Andina",
+        "coordinates": [
+          -8.1533956,-79.0132961
+        ]
+      },
+      {
+        "name": "Hostal la Rivera",
+        "coordinates": [
+          -8.082028, -79.122731
+        ]
+      },
+      {
+        "name": "Punta Huanchaco Hotel",
+        "coordinates": [
+          -8.082703, -79.121620
+        ]
+      },
+      {
+        "name": "Hotel Sol de Huanchaco",
+        "coordinates": [
+          -8.0818874,-79.1210546
+        ]
+      },
+      {
+        "name": "Hostal Solari",
+        "coordinates": [
+          -8.1144939,-79.0294637
+        ]
+      },
+      {
+        "name": "Hotel Central",
+        "coordinates": [
+          -8.1140191,-79.0284101
+        ]
+      },
+      {
+        "name": "Le Saint-Etienne Hotel",
+        "coordinates": [
+          -8.1149853,-79.0343702
+        ]
+      },
+      {
+        "name": "Ivanka Hostel",
+        "coordinates": [
+          -8.1084467,-79.0341462
+        ]
+      },
+      {
+        "name": "Hostal el Pillkay",
+        "coordinates": [
+          -8.1073977,-79.0244024
+        ]
+      },
+      {
+        "name": "Aypa Hostal",
+        "coordinates": [
+          -8.1071529,-79.0347241
+        ]
+      },
+      {
+        "name": "Hotel las Mercedes",
+        "coordinates": [
+          -8.108562,-79.0272373
+        ]
+      },
+      {
+        "name": "Recreo Hotel",
+        "coordinates": [
+          -8.1085886,-79.0229589
+        ]
+      },
+      {
+        "name": "Hotel Vista Hermosa",
+        "coordinates": [
+          -8.119887,-79.0438432
+        ]
+      }
+    ]
+  }
