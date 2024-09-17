@@ -92,6 +92,7 @@ map.on('load', () => {
     .setLngLat([-79.039117, -8.114850])
     .addTo(map)
     .getElement().addEventListener('click', () => {
+        showRouteToMarker([-79.039117, -8.114850]);
         map.flyTo({
             center: [-79.039117, -8.114850],
             zoom: 15,
@@ -120,6 +121,7 @@ map.on('load', () => {
             .setLngLat(location.coordinates.reverse())
             .addTo(map)
             .getElement().addEventListener('click', () => {
+                showRouteToMarker(location.coordinates);
                 map.flyTo({
                     center: location.coordinates,
                     zoom: 15,
@@ -150,6 +152,7 @@ map.on('load', () => {
             .setLngLat(location.coordinates.reverse())
             .addTo(map)
             .getElement().addEventListener('click', () => {
+                showRouteToMarker(location.coordinates);
                 map.flyTo({
                     center: location.coordinates,
                     zoom: 15,
@@ -169,6 +172,7 @@ map.on('load', () => {
     });
 });
 
+// Panel de informacion
 function updatePanel(title, imgUrl, description) {
     panelTitle.innerText = title;
     panelImg.src = imgUrl;
@@ -195,3 +199,41 @@ function onMarkerClick(title, imgUrl, description) {
 closePanelBtn.addEventListener('click', () => {
     hidePanel();
 });
+
+// Posicion del usuario
+function getUserLocation() {
+    return new Promise((resolve, reject) => {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    resolve([position.coords.longitude, position.coords.latitude]);
+                },
+                (error) => {
+                    reject(error);
+                }
+            );
+        } else {
+            reject(new Error("Geolocation is not supported by this browser."));
+        }
+    });
+}
+
+// Direcciones
+map.addControl(new NavigationControl());
+
+// Add Directions Control
+const directions = new MapboxDirections({
+    accessToken: mapboxgl.accessToken,
+    unit: 'metric'
+});
+map.addControl(directions, 'top-left');
+
+async function showRouteToMarker(markerLngLat) {
+    try {
+        const userLocation = await getUserLocation();
+        directions.setOrigin(userLocation);
+        directions.setDestination(markerLngLat);
+    } catch (error) {
+        console.error("Error getting user location:", error);
+    }
+}
