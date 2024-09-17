@@ -201,6 +201,19 @@ closePanelBtn.addEventListener('click', () => {
     hidePanel();
 });
 
+// Control para mostrar posicion del usuario
+map.addControl(
+    new mapboxgl.GeolocateControl({
+        positionOptions: {
+            enableHighAccuracy: true
+        },
+        // When active the map will receive updates to the device's location as it changes.
+        trackUserLocation: true,
+        // Draw an arrow next to the location dot to indicate which direction the device is heading.
+        showUserHeading: true
+    })
+);
+
 // Posicion del usuario
 function getUserLocation() {
     return new Promise((resolve, reject) => {
