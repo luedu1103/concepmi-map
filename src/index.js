@@ -2,6 +2,11 @@ import { Map, NavigationControl } from 'mapbox-gl/dist/mapbox-gl.js';
 import mapboxgl from 'mapbox-gl';
 
 const API_KEY = import.meta.env.VITE_API_KEY;
+const slidePanel = document.getElementById('slide-panel');
+const panelTitle = document.getElementById('panel-title');
+const panelImg = document.getElementById('panel-img');
+const panelDescription = document.getElementById('panel-description');
+const closePanelBtn = document.getElementById('close-panel');
 
 mapboxgl.accessToken = API_KEY;
 const map = new Map({
@@ -85,13 +90,23 @@ map.on('load', () => {
     
     new mapboxgl.Marker(el)
     .setLngLat([-79.039117, -8.114850])
-    .setPopup(
-        new mapboxgl.Popup({ offset: 25 })
-        .setHTML(
-            '<h3>Universidad Nacional de Trujillo</h3><img src="../UNT.jpg" alt="Imagen de la Universidad Nacional de Trujillo">'
-        )
-    )
-    .addTo(map);
+    .addTo(map)
+    .getElement().addEventListener('click', () => {
+        map.flyTo({
+            center: [-79.039117, -8.114850],
+            zoom: 15,
+            bearing: 0,
+            pitch: 60,
+            speed: 0.5,
+            curve: 1,
+            essential: true
+        });
+        onMarkerClick(
+            'Universidad Nacional de Trujillo',
+            '../UNT.jpg',
+            'This is the National University of Trujillo, one of the most important universities in the region.'
+        );
+    });
 
     // Marcadores para los centros turísticos
     fetch('/json/tourist-centers.json')
@@ -103,8 +118,23 @@ map.on('load', () => {
         el.className = 'marker-tourist'; 
         new mapboxgl.Marker(el)
             .setLngLat(location.coordinates.reverse())
-            .setPopup(new mapboxgl.Popup().setText(location.name))
-            .addTo(map);
+            .addTo(map)
+            .getElement().addEventListener('click', () => {
+                map.flyTo({
+                    center: location.coordinates,
+                    zoom: 15,
+                    bearing: 0,
+                    pitch: 60,
+                    speed: 0.5,
+                    curve: 1,
+                    essential: true
+                });
+                onMarkerClick(
+                    location.name,
+                    location.image,  // Hotel image
+                    location.description  // Hotel description
+                );
+            });
         });
     });
 
@@ -118,8 +148,50 @@ map.on('load', () => {
         el.className = 'marker-hotel'; 
         new mapboxgl.Marker(el)
             .setLngLat(location.coordinates.reverse())
-            .setPopup(new mapboxgl.Popup().setText(location.name))
-            .addTo(map);
+            .addTo(map)
+            .getElement().addEventListener('click', () => {
+                map.flyTo({
+                    center: location.coordinates,
+                    zoom: 15,
+                    bearing: 0,
+                    pitch: 60,
+                    speed: 0.5,
+                    curve: 1,
+                    essential: true
+                });
+                onMarkerClick(
+                    location.name,
+                    location.image,  // Hotel image
+                    location.description  // Hotel description
+                );
+            });
         });
     });
+});
+
+function updatePanel(title, imgUrl, description) {
+    panelTitle.innerText = title;
+    panelImg.src = imgUrl;
+    panelDescription.innerText = description;
+}
+
+function showPanel() {
+    if (!slidePanel.classList.contains('open')) {
+        slidePanel.classList.add('open');
+    }
+}
+
+function hidePanel() {
+    if (slidePanel.classList.contains('open')) {
+        slidePanel.classList.remove('open');
+    }
+}
+
+function onMarkerClick(title, imgUrl, description) {
+    updatePanel(title, imgUrl, description);
+    showPanel();
+}
+
+closePanelBtn.addEventListener('click', () => {
+    hidePanel();
 });

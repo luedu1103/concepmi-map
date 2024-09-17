@@ -6,12 +6,20 @@
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/markers.css">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/slide-panel.css">
 </head>
 <body>
     <div id="nav">
         <h3>CONCEPMI</h3>
     </div>
     <div id="map"></div>
-    <script type="module" src="./index.js"></script>
+    <div id="slide-panel" class="slide-panel">
+        <button id="close-panel" class="close-panel">x</button>
+        <h3 id="panel-title">Title</h3>
+        <img id="panel-img" src="" alt="" style="width:100%; height:auto;">
+        <p id="panel-description"></p>
+    </div>
+    </div>
+    <script type="module" src="./src/index.js"></script>
 </body>
 </html>
