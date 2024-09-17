@@ -93,6 +93,7 @@ map.on('load', () => {
     .setLngLat([-79.039117, -8.114850])
     .addTo(map)
     .getElement().addEventListener('click', () => {
+        getRoute([-79.039117, -8.114850]);
         map.flyTo({
             center: [-79.039117, -8.114850],
             zoom: 15,
@@ -121,6 +122,7 @@ map.on('load', () => {
             .setLngLat(location.coordinates.reverse())
             .addTo(map)
             .getElement().addEventListener('click', () => {
+                getRoute(location.coordinates);
                 map.flyTo({
                     center: location.coordinates,
                     zoom: 15,
@@ -151,6 +153,7 @@ map.on('load', () => {
             .setLngLat(location.coordinates.reverse())
             .addTo(map)
             .getElement().addEventListener('click', () => {
+                getRoute(location.coordinates);
                 map.flyTo({
                     center: location.coordinates,
                     zoom: 15,
@@ -199,61 +202,76 @@ closePanelBtn.addEventListener('click', () => {
 });
 
 // Posicion del usuario
-map.addControl(
-    new mapboxgl.GeolocateControl({
-        positionOptions: {
+function getUserLocation() {
+    return new Promise((resolve, reject) => {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            const { latitude, longitude } = position.coords;
+            resolve([longitude, latitude]);
+          },
+          (error) => {
+            reject(`Error getting location: ${error.message}`);
+          },
+          {
             enableHighAccuracy: true
-        },
-        // When active the map will receive updates to the device's location as it changes.
-        trackUserLocation: true,
-        // Draw an arrow next to the location dot to indicate which direction the device is heading.
-        showUserHeading: true
-    })
-);
+          }
+        );
+      } else {
+        reject('Geolocation is not supported by this browser.');
+      }
+    });
+  }
 
 // Ruta
 async function getRoute(end) {
-    // make a directions request using cycling profile
-    // an arbitrary start will always be the same
-    // only the end or destination will change
-    const query = await fetch(
-      `https://api.mapbox.com/directions/v5/mapbox/cycling/${start[0]},${start[1]};${end[0]},${end[1]}?steps=true&geometries=geojson&access_token=${mapboxgl.accessToken}`,
-      { method: 'GET' }
-    );
-    const json = await query.json();
-    const data = json.routes[0];
-    const route = data.geometry.coordinates;
-    const geojson = {
-      type: 'Feature',
-      properties: {},
-      geometry: {
-        type: 'LineString',
-        coordinates: route
-      }
-    };
-    // if the route already exists on the map, we'll reset it using setData
-    if (map.getSource('route')) {
-      map.getSource('route').setData(geojson);
-    }
-    // otherwise, we'll make a new request
-    else {
-      map.addLayer({
-        id: 'route',
-        type: 'line',
-        source: {
-          type: 'geojson',
-          data: geojson
-        },
-        layout: {
-          'line-join': 'round',
-          'line-cap': 'round'
-        },
-        paint: {
-          'line-color': '#3887be',
-          'line-width': 5,
-          'line-opacity': 0.75
+    try {
+      // Get user's current location
+      const start = await getUserLocation();
+      
+      // make a directions request using cycling profile
+      const query = await fetch(
+        `https://api.mapbox.com/directions/v5/mapbox/cycling/${start[0]},${start[1]};${end[0]},${end[1]}?steps=true&geometries=geojson&access_token=${mapboxgl.accessToken}`,
+        { method: 'GET' }
+      );
+      const json = await query.json();
+      const data = json.routes[0];
+      const route = data.geometry.coordinates;
+      const geojson = {
+        type: 'Feature',
+        properties: {},
+        geometry: {
+          type: 'LineString',
+          coordinates: route
         }
-      });
+      };
+  
+      // if the route already exists on the map, we'll reset it using setData
+      if (map.getSource('route')) {
+        map.getSource('route').setData(geojson);
+      }
+      // otherwise, we'll make a new request
+      else {
+        map.addLayer({
+          id: 'route',
+          type: 'line',
+          source: {
+            type: 'geojson',
+            data: geojson
+          },
+          layout: {
+            'line-join': 'round',
+            'line-cap': 'round'
+          },
+          paint: {
+            'line-color': '#3887be',
+            'line-width': 5,
+            'line-opacity': 0.75
+          }
+        });
+      }
+      // add turn instructions here at the end
+    } catch (error) {
+      console.error(error);
     }
-    // add turn instructions here at the end
   }
