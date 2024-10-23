@@ -26,12 +26,12 @@
 /* Ajustes para pantallas grandes (desktop) */
 @media (min-width: 768px) {
     .slide-panel {
-        width: 500px; 
+        width: 450px; 
         height: 100%; 
         top: 0;   
         bottom: auto; 
         right: auto; 
-        left: -540px;   
+        left: -490px;   
         padding-left: 20px;
         padding-right: 20px;
         transition: left 0.3s ease;
@@ -42,19 +42,94 @@
     }
 }
 
-/* Ajustes para el botón de cierre */
+/* Botón de cierre */
 .close-panel {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #ff610f;
+    background-color: #f1f1f1;
     border: none;
-    color: white;
-    font-size: 10px;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
+    font-size: 20px;
     cursor: pointer;
+    color: #ff610f;
+    padding: 8px;
+    border-radius: 20%;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efecto hover */
+.close-panel:hover {
+    background-color: #ff610f; 
+    color: #ffffff; 
+    transform: scale(1.1); 
+}
+
+/* Contenedor de la imagen */
+.panel-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.panel-img-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor del contenido */
+.panel-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre elementos */
+}
+
+/* Título del panel */
+.panel-content h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333333;
     text-align: center;
-    line-height: 8px;
+}
+
+/* Descripción */
+.panel-info {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Detalles en lista */
+#panel-details {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+#panel-details li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Botón de acción */
+.action-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff610f;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #e5550d;
 }

@@ -3,6 +3,13 @@
     <meta charset="utf-8">
     <title>CONCEPMI</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <!-- Favicon Link -->
+    <link rel="icon" href="./public/img/favicon/concepmi.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./public/img/favicon/concepmi.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.css" rel="stylesheet">
     <link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v5.0.1/mapbox-gl-directions.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/markers.css">
@@ -10,15 +17,48 @@
     <link rel="stylesheet" href="./styles/slide-panel.css">
 </head>
 <body>
-    <div id="nav">
-        <h3>CONCEPMI</h3>
+    <div id="button-container">
+        <button class="map-button" id="restaurants-button">
+            <i class="fas fa-utensils"></i>
+        </button>
+        <button class="map-button" id="hotels-button">
+            <i class="fas fa-bed"></i>
+        </button>
+        <button class="map-button" id="tourist-attractions-button">
+            <i class="fas fa-camera"></i>
+        </button>
     </div>
     <div id="map"></div>
     <div id="slide-panel" class="slide-panel">
-        <button id="close-panel" class="close-panel">x</button>
-        <h3 id="panel-title">Title</h3>
-        <img id="panel-img" src="" alt="" style="width:100%; height:auto;">
-        <p id="panel-description"></p>
+        <!-- Botón de cierre en la parte superior derecha -->
+        <button id="close-panel" class="close-panel">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <!-- Contenedor para la imagen principal -->
+        <div class="panel-img-container">
+            <img id="panel-img" src="" alt="Main Image">
+        </div>
+        
+        <!-- Contenedor principal para el título e información -->
+        <div class="panel-content">
+            <h3 id="panel-title">Title</h3>
+            
+            <!-- Nueva sección de información destacada -->
+            <div class="panel-info">
+                <p id="panel-description">Description text goes here. Add a brief summary or introduction.</p>
+                <ul id="panel-details">
+                    <li><strong>Detail 1:</strong> Information about detail 1</li>
+                    <li><strong>Detail 2:</strong> Information about detail 2</li>
+                    <li><strong>Detail 3:</strong> Information about detail 3</li>
+                </ul>
+            </div>
+            
+            <!-- Nueva sección para información adicional o un botón de acción -->
+            <div class="panel-footer">
+                <a href="#" class="action-button">Learn More</a>
+            </div>
+        </div>
     </div>
     </div>
     <script type="module" src="./src/index.js"></script>

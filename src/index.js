@@ -8,6 +8,38 @@ const panelImg = document.getElementById('panel-img');
 const panelDescription = document.getElementById('panel-description');
 const closePanelBtn = document.getElementById('close-panel');
 
+let hotelVisible = false;
+let touristVisible = false;
+
+let hotelMarkerList = [];
+let touristMarkerList = [];
+
+document.getElementById('restaurants-button').addEventListener('click', () => {
+
+});
+
+document.getElementById('hotels-button').addEventListener('click', () => {
+  if (hotelVisible == false){
+    hotelVisible = true;
+    getHotels();
+  } else {
+    hotelMarkerList.forEach(marker => marker.remove());
+    hotelMarkerList = [];
+    hotelVisible = false;
+  }
+});
+
+document.getElementById('tourist-attractions-button').addEventListener('click', () => {
+  if (touristVisible == false){
+    touristVisible = true;
+    getTouristCenters();
+  } else {
+    touristMarkerList.forEach(marker => marker.remove());
+    touristMarkerList = [];
+    touristVisible = false;
+  }
+});
+
 mapboxgl.accessToken = API_KEY;
 const map = new Map({
     container: 'map',
@@ -31,24 +63,6 @@ map.on('load', () => {
         curve: 1,
         essential: true
     });
-
-    // Geojson's
-    // Lugares turísticos
-    map.addSource('route', {
-        'type': 'geojson',
-        'data': '/geojson/map-tourist.geojson' 
-    });
-
-    map.addLayer({
-        'id': 'route',
-        'type': 'fill',
-        'source': 'route',
-        'paint': {
-            // '#1abfdf' // #4e17a8 #ff610f
-            'fill-color': '#4e17a8',
-            'fill-opacity': 0.3,
-        }
-    });
     
     // Universidad
     map.addSource('uni', {
@@ -63,23 +77,6 @@ map.on('load', () => {
         'paint': {
             // '#1abfdf' // #4e17a8 #ff610f
             'fill-color': '#ff610f',
-            'fill-opacity': 0.3,
-        }
-    })
-
-    // Hoteles
-    map.addSource('hotel', {
-        'type': 'geojson',
-        'data': '/geojson/map-hotels.geojson' 
-    })
-
-    map.addLayer({
-        'id': 'hotel',
-        'type': 'fill',
-        'source': 'hotel',
-        'paint': {
-            // '#1abfdf' // #4e17a8 #ff610f
-            'fill-color': '#1abfdf',
             'fill-opacity': 0.3,
         }
     })
@@ -109,68 +106,6 @@ map.on('load', () => {
             'This is the National University of Trujillo, one of the most important universities in the region.'
         );
     });
-
-    // Marcadores para los centros turísticos
-    fetch('/json/tourist-centers.json')
-    .then(response => response.json())
-    .then(data => {
-        
-        data.locations.forEach(location => {
-        const el = document.createElement('div');
-        el.className = 'marker-tourist'; 
-        new mapboxgl.Marker(el)
-            .setLngLat(location.coordinates.reverse())
-            .addTo(map)
-            .getElement().addEventListener('click', () => {
-                getRoute(location.coordinates);
-                map.flyTo({
-                    center: location.coordinates,
-                    zoom: 15,
-                    bearing: 0,
-                    pitch: 60,
-                    speed: 0.5,
-                    curve: 1,
-                    essential: true
-                });
-                onMarkerClick(
-                    location.name,
-                    location.image,  // Hotel image
-                    location.description  // Hotel description
-                );
-            });
-        });
-    });
-
-    // Marcadores para los hoteles
-    fetch('/json/hotels-centers.json')
-    .then(response => response.json())
-    .then(data => {
-        
-        data.locations.forEach(location => {
-        const el = document.createElement('div');
-        el.className = 'marker-hotel'; 
-        new mapboxgl.Marker(el)
-            .setLngLat(location.coordinates.reverse())
-            .addTo(map)
-            .getElement().addEventListener('click', () => {
-                getRoute(location.coordinates);
-                map.flyTo({
-                    center: location.coordinates,
-                    zoom: 15,
-                    bearing: 0,
-                    pitch: 60,
-                    speed: 0.5,
-                    curve: 1,
-                    essential: true
-                });
-                onMarkerClick(
-                    location.name,
-                    location.image,  // Hotel image
-                    location.description  // Hotel description
-                );
-            });
-        });
-    });
 });
 
 // Panel de informacion
@@ -192,6 +127,7 @@ function hidePanel() {
     }
 }
 
+// Funcion del marcador
 function onMarkerClick(title, imgUrl, description) {
     updatePanel(title, imgUrl, description);
     showPanel();
@@ -283,8 +219,78 @@ async function getRoute(end) {
           }
         });
       }
-      // add turn instructions here at the end
     } catch (error) {
       console.error(error);
     }
   }
+
+// Funciones para mostrar los marcadores
+function getHotels() {
+  // Marcadores para los hoteles
+  fetch('/json/hotels-centers.json')
+  .then(response => response.json())
+  .then(data => {
+      
+      data.locations.forEach(location => {
+      const el = document.createElement('div');
+      el.className = 'marker-hotel'; 
+      let hotelMarker = new mapboxgl.Marker(el)
+          .setLngLat(location.coordinates.reverse())
+          .addTo(map);
+
+          hotelMarkerList.push(hotelMarker);
+          hotelMarker.getElement().addEventListener('click', () => {
+              getRoute(location.coordinates);
+              map.flyTo({
+                  center: location.coordinates,
+                  zoom: 15,
+                  bearing: 0,
+                  pitch: 60,
+                  speed: 0.5,
+                  curve: 1,
+                  essential: true
+              });
+              onMarkerClick(
+                  location.name,
+                  location.image,
+                  location.description
+              );
+          });
+        });
+  });
+}
+
+function getTouristCenters() {
+  // Marcadores para los centros turísticos
+  fetch('/json/tourist-centers.json')
+  .then(response => response.json())
+  .then(data => {
+      
+      data.locations.forEach(location => {
+      const el = document.createElement('div');
+      el.className = 'marker-tourist'; 
+      let touristMarker = new mapboxgl.Marker(el)
+          .setLngLat(location.coordinates.reverse())
+          .addTo(map);
+
+          touristMarkerList.push(touristMarker);
+          touristMarker.getElement().addEventListener('click', () => {
+              getRoute(location.coordinates);
+              map.flyTo({
+                  center: location.coordinates,
+                  zoom: 15,
+                  bearing: 0,
+                  pitch: 60,
+                  speed: 0.5,
+                  curve: 1,
+                  essential: true
+              });
+              onMarkerClick(
+                  location.name,
+                  location.image,  // Hotel image
+                  location.description  // Hotel description
+              );
+          });
+      });
+  });
+}

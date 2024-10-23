@@ -5,22 +5,43 @@ body {
     /* overflow: hidden; */
 }
 
-#nav {
+#map { 
     position: fixed;
     top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
-    background: linear-gradient(to right, #1abfdf, #4e17a8, #ff610f);
-    color: white;
-    text-align: center;
-    padding: 5px 0; /* Aumenta el padding para mayor comodidad */
-    z-index: 1000;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra más sutil */
-    border-bottom: 2px solid #ff610f;
+    height: 100%;
 }
 
-#map { 
-    position: absolute; 
-    top: 70px;
-    bottom: 0;
-    width: 100%;
+#button-container {
+    position: absolute;
+    top: 10px;
+    left: 100px; 
+    transform: translateX(-50%); 
+    display: flex; 
+    gap: 10px;
+    z-index: 1000; 
+}
+
+.map-button {
+    background-color: #ffffff; 
+    border: none; 
+    padding: 10px 15px;
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+    display: flex;
+    align-items: flex-end; 
+}
+
+.map-button i {
+    margin-right: 5px; 
+}
+
+.map-button:hover {
+    background-color: #ff610f; 
+    color: #ffffff; 
+    transition: background-color 0.3s ease;
 }
