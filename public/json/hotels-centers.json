@@ -2,84 +2,98 @@
     "locations": [
       {
         "name": "Hotel Country Trujillo",
+        "image": "/img/hoteles/hotelcountrytrujillo.png",
         "coordinates": [
           -8.139095260382817,-79.03207238147738
         ]
       },
       {
         "name": "Hotel Costa Andina",
+        "image": "/img/hoteles/costaAndina.png",
         "coordinates": [
           -8.1533956,-79.0132961
         ]
       },
       {
         "name": "Hostal la Rivera",
+        "image": "/img/hoteles/laRivera.png",
         "coordinates": [
           -8.082028, -79.122731
         ]
       },
       {
         "name": "Punta Huanchaco Hotel",
+        "image": "/img/hoteles/puntaHuanchaco.png",
         "coordinates": [
           -8.082703, -79.121620
         ]
       },
       {
         "name": "Hotel Sol de Huanchaco",
+        "image": "/img/hoteles/hotel-sol-de-huanchaco.png",
         "coordinates": [
           -8.0818874,-79.1210546
         ]
       },
       {
         "name": "Hostal Solari",
+        "image": "/img/hoteles/hostal-solari.png",
         "coordinates": [
           -8.1144957,-79.0270703
         ]
       },
       {
         "name": "Hotel Central",
+        "image": "/img/hoteles/hotel-central.png",
         "coordinates": [
           -8.1140384,-79.0283055
         ]
       },
       {
         "name": "Le Saint-Etienne Hotel",
+        "image": "/img/hoteles/lesaint.png",
         "coordinates": [
           -8.1149853,-79.0343702
         ]
       },
       {
         "name": "Ivanka Hostel",
+        "image": "/img/hoteles/ivanka-hostel.png",
         "coordinates": [
           -8.1084852,-79.0317485
         ]
       },
       {
         "name": "Hostal el Pillkay",
+        "image": "/img/hoteles/hostal-el-pillkay.png",
         "coordinates": [
           -8.107209, -79.024201
         ]
       },
       {
         "name": "Aypa Hostal",
+        "image": "/img/hoteles/aypa-hostal.png",
         "coordinates": [
           -8.1072177,-79.0322626
         ]
       },
       {
         "name": "Hotel las Mercedes",
+        "image": "/img/hoteles/las-mercedes.png",
         "coordinates": [
           -8.108570443454823,-79.02460662521436
         ]
       },
       {
         "name": "Recreo Hotel",
+        "image": "/img/hoteles/recreo-hotel.png",
         "coordinates": [
           -8.1085886,-79.0229589
         ]
       },
       {
         "name": "Hotel Vista Hermosa",
+        "image": "/img/hoteles/vista-hermosa.png",
         "coordinates": [
           -8.119947, -79.043592
         ]
