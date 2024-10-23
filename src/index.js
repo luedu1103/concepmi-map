@@ -10,12 +10,23 @@ const closePanelBtn = document.getElementById('close-panel');
 
 let hotelVisible = false;
 let touristVisible = false;
+let restaurantVisible = false;
 
 let hotelMarkerList = [];
 let touristMarkerList = [];
+let restaurantMarkerList = [];
 
 document.getElementById('restaurants-button').addEventListener('click', () => {
-
+  if (restaurantVisible == false){
+    restaurantVisible = true;
+    getRestaurants();
+    console.log('visible'); 
+  } else {
+    restaurantMarkerList.forEach(marker => marker.remove());
+    restaurantMarkerList = [];
+    restaurantVisible = false;
+    console.log('not visible');
+  }
 });
 
 document.getElementById('hotels-button').addEventListener('click', () => {
@@ -241,15 +252,7 @@ function getHotels() {
           hotelMarkerList.push(hotelMarker);
           hotelMarker.getElement().addEventListener('click', () => {
               getRoute(location.coordinates);
-              map.flyTo({
-                  center: location.coordinates,
-                  zoom: 15,
-                  bearing: 0,
-                  pitch: 60,
-                  speed: 0.5,
-                  curve: 1,
-                  essential: true
-              });
+              flyingTo(location.coordinates);
               onMarkerClick(
                   location.name,
                   location.image,
@@ -276,15 +279,7 @@ function getTouristCenters() {
           touristMarkerList.push(touristMarker);
           touristMarker.getElement().addEventListener('click', () => {
               getRoute(location.coordinates);
-              map.flyTo({
-                  center: location.coordinates,
-                  zoom: 15,
-                  bearing: 0,
-                  pitch: 60,
-                  speed: 0.5,
-                  curve: 1,
-                  essential: true
-              });
+              flyingTo(location.coordinates);
               onMarkerClick(
                   location.name,
                   location.image,  // Hotel image
@@ -293,4 +288,43 @@ function getTouristCenters() {
           });
       });
   });
+}
+
+function getRestaurants() {
+  // Marcadores para los restaurantes
+  fetch('/json/restaurant-centers.json')
+  .then(response => response.json())
+  .then(data => {
+      
+      data.locations.forEach(location => {
+      const el = document.createElement('div');
+      el.className = 'marker-restaurant'; 
+      let restaurantMarker = new mapboxgl.Marker(el)
+          .setLngLat(location.coordinates.reverse())
+          .addTo(map);
+
+          restaurantMarkerList.push(restaurantMarker);
+          restaurantMarker.getElement().addEventListener('click', () => {
+              getRoute(location.coordinates);
+              flyingTo(location.coordinates);
+              onMarkerClick(
+                  location.name,
+                  location.image,
+                  location.description 
+              );
+          });
+      });
+  });
+}
+
+function flyingTo(coordinates) {
+  map.flyTo({
+    center: coordinates,
+    zoom: 18,
+    bearing: 0,
+    pitch: 60,
+    speed: 0.5,
+    curve: 1,
+    essential: true
+});
 }
