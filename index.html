@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="./public/img/favicon/concepmi.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.css" rel="stylesheet">
     <link href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v5.0.1/mapbox-gl-directions.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/markers.css">
@@ -42,22 +42,20 @@
             
             <!-- Contenedor principal para el título e información -->
             <div class="panel-content">
-                <h3 id="panel-title">Title</h3>
-                
-                <!-- Nueva sección de información destacada -->
-                <div class="panel-info">
-                    <p id="panel-description">Description text goes here. Add a brief summary or introduction.</p>
-                    <ul id="panel-details">
-                        <li><strong>Detail 1:</strong> Information about detail 1</li>
-                        <li><strong>Detail 2:</strong> Information about detail 2</li>
-                        <li><strong>Detail 3:</strong> Information about detail 3</li>
-                    </ul>
+                <h3 id="panel-title">Nombre del hotel</h3>
+                <div id="panel-rating">★★★★★</div> <!-- Para la calificación en estrellas -->
+                <div id="panel-location">Ubicación</div>
+                <div id="panel-prices">Precios: <ul></ul></div>
+                <div id="panel-services">Servicios: <ul></ul></div>
+                <div class="panel-photos">
+                    <img id="photo1" src="" alt="Hotel photo 1">
+                    <img id="photo2" src="" alt="Hotel photo 2">
+                    <img id="photo3" src="" alt="Hotel photo 3">
+                    <img id="photo4" src="" alt="Hotel photo 4">
                 </div>
-                
-                <!-- Nueva sección para información adicional o un botón de acción -->
-                <div class="panel-footer">
-                    <a href="#" class="action-button">Learn More</a>
-                </div>
+                <button id="directions-button" class="action-button">Cómo llegar</button>
+                <div id="panel-contact-number"><i class="fas fa-phone-alt"></i>  <span></span></div>
+                <div id="panel-contact-email"><i class="fas fa-envelope"></i>  <span></span></div>
             </div>
         </div>
     </div>

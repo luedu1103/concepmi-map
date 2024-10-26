@@ -2,10 +2,14 @@ import { Map, NavigationControl, MapboxDirections} from 'mapbox-gl/dist/mapbox-g
 import mapboxgl from 'mapbox-gl';
 
 const API_KEY = import.meta.env.VITE_API_KEY;
+// Todo lo que necesita el slide panel
 const slidePanel = document.getElementById('slide-panel');
+
 const panelTitle = document.getElementById('panel-title');
 const panelImg = document.getElementById('panel-img');
-const panelDescription = document.getElementById('panel-description');
+const panelRating = document.getElementById('panel-rating');
+const panelLocation = document.getElementById('panel-location');
+
 const closePanelBtn = document.getElementById('close-panel');
 
 let hotelVisible = false;
@@ -120,11 +124,10 @@ map.on('load', () => {
 });
 
 // Panel de informacion
-function updatePanel(title, imgUrl, description) {
-    panelTitle.innerText = title;
-    panelImg.src = imgUrl;
-    panelDescription.innerText = description;
-}
+// function updatePanel(title, imgUrl) {
+//     panelTitle.innerText = title;
+//     panelImg.src = imgUrl;
+// }
 
 function showPanel() {
     if (!slidePanel.classList.contains('open')) {
@@ -139,9 +142,44 @@ function hidePanel() {
 }
 
 // Funcion del marcador
-function onMarkerClick(title, imgUrl, description) {
-    updatePanel(title, imgUrl, description);
-    showPanel();
+function onMarkerClick(imgUrl, name, rating, location, numero, email, prices, services, photos, coordinates) {
+     // Actualizar la información en el panel
+     panelTitle.innerText = name;
+     panelImg.src = imgUrl;
+     panelRating.innerText = '★'.repeat(rating) + ` ${rating}`; // Ejemplo de calificación en estrellas
+     panelLocation.innerText = location;
+     document.getElementById('panel-contact-number').querySelector('span').innerText = ` ${numero}`;
+     document.getElementById('panel-contact-email').querySelector('span').innerText = ` ${email}`;
+
+     const pricesList = document.getElementById('panel-prices').querySelector('ul');
+     pricesList.innerHTML = '';
+     prices.forEach(price => {
+          const li = document.createElement('li');
+          li.textContent = price;
+          pricesList.appendChild(li);
+     });
+ 
+     // Agregar servicios al panel
+     const servicesList = document.getElementById('panel-services').querySelector('ul');
+     servicesList.innerHTML = ''; // Limpiar los servicios previos
+     services.forEach(service => {
+         const li = document.createElement('li');
+         li.textContent = service;
+         servicesList.appendChild(li);
+     });
+ 
+     // Actualizar las fotos
+     document.getElementById('photo1').src = photos[0];
+     document.getElementById('photo2').src = photos[1];
+     document.getElementById('photo3').src = photos[2];
+     document.getElementById('photo4').src = photos[3];
+ 
+     // Mostrar el panel
+     showPanel();
+ 
+     // Asignar el evento al botón de direcciones
+     const directionsButton = document.getElementById('directions-button');
+     directionsButton.onclick = () => getRoute(coordinates);
 }
 
 closePanelBtn.addEventListener('click', () => {
@@ -251,12 +289,18 @@ function getHotels() {
 
           hotelMarkerList.push(hotelMarker);
           hotelMarker.getElement().addEventListener('click', () => {
-              getRoute(location.coordinates);
               flyingTo(location.coordinates);
               onMarkerClick(
-                  location.name,
                   location.image,
-                  location.description
+                  location.name,
+                  location.rating,
+                  location.ubicacion,
+                  location.contacto.numero,
+                  location.contacto.email,
+                  location.precios,
+                  location.servicios,
+                  location.fotos,
+                  location.coordinates
               );
           });
         });
@@ -281,10 +325,17 @@ function getTouristCenters() {
               getRoute(location.coordinates);
               flyingTo(location.coordinates);
               onMarkerClick(
-                  location.name,
-                  location.image,  // Hotel image
-                  location.description  // Hotel description
-              );
+                location.image,
+                location.name,
+                location.rating,
+                location.ubicacion,
+                location.contacto.numero,
+                location.contacto.email,
+                location.precios,
+                location.servicios,
+                location.fotos,
+                location.coordinates
+            );
           });
       });
   });
@@ -308,10 +359,17 @@ function getRestaurants() {
               getRoute(location.coordinates);
               flyingTo(location.coordinates);
               onMarkerClick(
-                  location.name,
-                  location.image,
-                  location.description 
-              );
+                location.image,
+                location.name,
+                location.rating,
+                location.ubicacion,
+                location.contacto.numero,
+                location.contacto.email,
+                location.precios,
+                location.servicios,
+                location.fotos,
+                location.coordinates
+            );
           });
       });
   });

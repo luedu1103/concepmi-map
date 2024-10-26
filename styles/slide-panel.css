@@ -64,72 +64,87 @@
     color: #ffffff; 
     transform: scale(1.1); 
 }
-
 /* Contenedor de la imagen */
-.panel-img-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
 .panel-img-container img {
     width: 100%;
+    /* max-width: 250px; */
     height: auto;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Contenedor del contenido */
+/* Contenedor principal de contenido */
 .panel-content {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espacio entre elementos */
+    gap: 10px;
+    width: 100%;
 }
 
 /* Título del panel */
 .panel-content h3 {
+    padding-top: 5%;
     margin: 0;
     font-size: 24px;
     color: #333333;
     text-align: center;
 }
 
-/* Descripción */
-.panel-info {
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-/* Detalles en lista */
-#panel-details {
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0 0 0;
-}
-
-#panel-details li {
-    font-size: 14px;
+/* Elementos de detalles generales */
+#panel-rating, #panel-location, #panel-contact {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
     margin-bottom: 5px;
+}
+
+/* Detalles específicos en lista */
+#panel-prices ul, #panel-services ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+}
+
+/* Fotos adicionales */
+.panel-photos {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.panel-photos img {
+    width: 100px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Botón de acción */
 .action-button {
-    display: inline-block;
     padding: 10px 20px;
     background-color: #ff610f;
     color: #ffffff;
-    text-decoration: none;
-    text-align: center;
+    border: none;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
     font-weight: bold;
-    margin-top: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
 .action-button:hover {
     background-color: #e5550d;
+}
+
+/* Ajuste para panel-content si está encima del pie de página */
+.panel-content {
+    overflow-y: auto;
+    padding-bottom: 5%;
+}
+
+.slide-panel::-webkit-scrollbar {
+    display: none; 
 }

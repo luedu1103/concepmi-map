@@ -3,71 +3,323 @@
     {
       "name": "Maje's",
       "image": "",
+      "rating": 0,
+        "ubicacion": "",
+        "contacto": {
+          "numero": "",
+          "email": ""
+        },
+        "precios": [
+          "", 
+          "", 
+          ""
+        ],
+        "servicios": [],
+        "fotos": [
+          "/img/restaurantes/", 
+          "/img/restaurantes/",
+          "/img/restaurantes/",
+          "/img/restaurantes/"
+        ],
       "coordinates": [-8.115139369291299, -79.03607068910648]
     },
     {
       "name": "El Paisa Internacional",
       "image": "",
+      "rating": 0,
+        "ubicacion": "",
+        "contacto": {
+          "numero": "",
+          "email": ""
+        },
+        "precios": [
+          "", 
+          "", 
+          ""
+        ],
+        "servicios": [],
+        "fotos": [
+          "/img/restaurantes/", 
+          "/img/restaurantes/",
+          "/img/restaurantes/",
+          "/img/restaurantes/"
+        ],
       "coordinates": [-8.118400209332577, -79.03704939267932]
     },
     {
       "name": "Doña Peta",
       "image": "",
+      "rating": 0,
+        "ubicacion": "",
+        "contacto": {
+          "numero": "",
+          "email": ""
+        },
+        "precios": [
+          "", 
+          "", 
+          ""
+        ],
+        "servicios": [],
+        "fotos": [
+          "/img/restaurantes/", 
+          "/img/restaurantes/",
+          "/img/restaurantes/",
+          "/img/restaurantes/"
+        ],
       "coordinates": [-8.110578260176112, -79.03494375938848]
     },
     {
       "name": "El Caminito",
       "image": "",
+      "rating": 0,
+        "ubicacion": "",
+        "contacto": {
+          "numero": "",
+          "email": ""
+        },
+        "precios": [
+          "", 
+          "", 
+          ""
+        ],
+        "servicios": [],
+        "fotos": [
+          "/img/restaurantes/", 
+          "/img/restaurantes/",
+          "/img/restaurantes/",
+          "/img/restaurantes/"
+        ],
       "coordinates": [-8.11704816363951, -79.0381139355797]
     },
     {
       "name": "Agora restaurante",
       "image": "",
+      "rating": 0,
+        "ubicacion": "",
+        "contacto": {
+          "numero": "",
+          "email": ""
+        },
+        "precios": [
+          "", 
+          "", 
+          ""
+        ],
+        "servicios": [],
+        "fotos": [
+          "/img/restaurantes/", 
+          "/img/restaurantes/",
+          "/img/restaurantes/",
+          "/img/restaurantes/"
+        ],
       "coordinates": [-8.115476420831186, -79.03565881487043]
     },
     {
       "name": "Amar restaurante",
       "image": "",
+      "rating": 0,
+        "ubicacion": "",
+        "contacto": {
+          "numero": "",
+          "email": ""
+        },
+        "precios": [
+          "", 
+          "", 
+          ""
+        ],
+        "servicios": [],
+        "fotos": [
+          "/img/restaurantes/", 
+          "/img/restaurantes/",
+          "/img/restaurantes/",
+          "/img/restaurantes/"
+        ],
       "coordinates": [-8.116925, -79.037367]
     },
     {
       "name": "Mili's",
       "image": "",
+      "rating": 0,
+        "ubicacion": "",
+        "contacto": {
+          "numero": "",
+          "email": ""
+        },
+        "precios": [
+          "", 
+          "", 
+          ""
+        ],
+        "servicios": [],
+        "fotos": [
+          "/img/restaurantes/", 
+          "/img/restaurantes/",
+          "/img/restaurantes/",
+          "/img/restaurantes/"
+        ],
       "coordinates": [-8.115407, -79.036660]
     },
     {
       "name": "La mamá Toya",
       "image": "",
+      "rating": 0,
+        "ubicacion": "",
+        "contacto": {
+          "numero": "",
+          "email": ""
+        },
+        "precios": [
+          "", 
+          "", 
+          ""
+        ],
+        "servicios": [],
+        "fotos": [
+          "/img/restaurantes/", 
+          "/img/restaurantes/",
+          "/img/restaurantes/",
+          "/img/restaurantes/"
+        ],
       "coordinates": [-8.1137356, -79.0348985]
     },
     {
       "name": "Casa Blanca",
       "image": "",
+      "rating": 0,
+        "ubicacion": "",
+        "contacto": {
+          "numero": "",
+          "email": ""
+        },
+        "precios": [
+          "", 
+          "", 
+          ""
+        ],
+        "servicios": [],
+        "fotos": [
+          "/img/restaurantes/", 
+          "/img/restaurantes/",
+          "/img/restaurantes/",
+          "/img/restaurantes/"
+        ],
       "coordinates": [-8.1148722, -79.0356824]
     },
     {
       "name": "Don Uber",
       "image": "",
+      "rating": 0,
+        "ubicacion": "",
+        "contacto": {
+          "numero": "",
+          "email": ""
+        },
+        "precios": [
+          "", 
+          "", 
+          ""
+        ],
+        "servicios": [],
+        "fotos": [
+          "/img/restaurantes/", 
+          "/img/restaurantes/",
+          "/img/restaurantes/",
+          "/img/restaurantes/"
+        ],
       "coordinates": [-8.119965737808002, -79.04055711809136]
     },
     {
       "name": "Búfalo",
       "image": "",
+      "rating": 0,
+        "ubicacion": "",
+        "contacto": {
+          "numero": "",
+          "email": ""
+        },
+        "precios": [
+          "", 
+          "", 
+          ""
+        ],
+        "servicios": [],
+        "fotos": [
+          "/img/restaurantes/", 
+          "/img/restaurantes/",
+          "/img/restaurantes/",
+          "/img/restaurantes/"
+        ],
       "coordinates": [-8.121676652408766, -79.03590412361991]
     },
     {
       "name": "Cuatrero",
       "image": "",
+      "rating": 0,
+        "ubicacion": "",
+        "contacto": {
+          "numero": "",
+          "email": ""
+        },
+        "precios": [
+          "", 
+          "", 
+          ""
+        ],
+        "servicios": [],
+        "fotos": [
+          "/img/restaurantes/", 
+          "/img/restaurantes/",
+          "/img/restaurantes/",
+          "/img/restaurantes/"
+        ],
       "coordinates": [-8.122009502124328, -79.03545673007565]
     },
     {
       "name": "El Uruguayo",
       "image": "",
+      "rating": 0,
+        "ubicacion": "",
+        "contacto": {
+          "numero": "",
+          "email": ""
+        },
+        "precios": [
+          "", 
+          "", 
+          ""
+        ],
+        "servicios": [],
+        "fotos": [
+          "/img/restaurantes/", 
+          "/img/restaurantes/",
+          "/img/restaurantes/",
+          "/img/restaurantes/"
+        ],
       "coordinates": [-8.1239229, -79.0384219]
     },
     {
       "name": "El Marisco del Amor",
       "image": "",
+      "rating": 0,
+        "ubicacion": "",
+        "contacto": {
+          "numero": "",
+          "email": ""
+        },
+        "precios": [
+          "", 
+          "", 
+          ""
+        ],
+        "servicios": [],
+        "fotos": [
+          "/img/restaurantes/", 
+          "/img/restaurantes/",
+          "/img/restaurantes/",
+          "/img/restaurantes/"
+        ],
       "coordinates": [-8.1114332, -79.0358046]
     }
   ]
