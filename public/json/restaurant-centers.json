@@ -2,323 +2,277 @@
   "locations": [
     {
       "name": "Maje's",
-      "image": "",
-      "rating": 0,
-        "ubicacion": "",
+      "image": "/img/restaurantes/majes.png",
+      "rating": 4.0,
+        "ubicacion": "Deán Saavedra 369 Urb. San Andrés. 1º Etapa, Trujillo, Peru",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": "(044) 679482",
+          "email": "majesrestaurant@gmail.com"
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Promedio del menu: S/ 12.50"
         ],
-        "servicios": [],
+        "servicios": [
+          "Horario: Lunes a Sabado de 7 a.m a 11 p.m"
+        ],
         "fotos": [
-          "/img/restaurantes/", 
-          "/img/restaurantes/",
-          "/img/restaurantes/",
-          "/img/restaurantes/"
+          "/img/restaurantes/majes/1.png", 
+          "/img/restaurantes/majes/2.png",
+          "/img/restaurantes/majes/3.png",
+          "/img/restaurantes/majes/4.png"
         ],
       "coordinates": [-8.115139369291299, -79.03607068910648]
     },
     {
       "name": "El Paisa Internacional",
-      "image": "",
-      "rating": 0,
-        "ubicacion": "",
+      "image": "/img/restaurantes/paisa-internacional.png",
+      "rating": 4.1,
+        "ubicacion": "Fray Pedro Urraca 515, Trujillo 13001",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": "044-225803 - 933 193 447",
+          "email": null
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Promedio del menu: S/ 38.00"
         ],
-        "servicios": [],
+        "servicios": [
+          "Horario: Lunes a Domingo de 8 a.m a 5 p.m"
+        ],
         "fotos": [
-          "/img/restaurantes/", 
-          "/img/restaurantes/",
-          "/img/restaurantes/",
-          "/img/restaurantes/"
+          "/img/restaurantes/paisa/1.png", 
+          "/img/restaurantes/paisa/2.png",
+          "/img/restaurantes/paisa/3.png",
+          "/img/restaurantes/paisa/4.png"
         ],
       "coordinates": [-8.118400209332577, -79.03704939267932]
     },
     {
       "name": "Doña Peta",
-      "image": "",
-      "rating": 0,
-        "ubicacion": "",
+      "image": "/img/restaurantes/dona-peta.png",
+      "rating": 4.8,
+        "ubicacion": "Av. Daniel Alcides Carrión 522, Urb. San Nicolás",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": "924 136 358",
+          "email": "donapeta6@gmail.com"
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Promedio del menu: S/ 25.00"
         ],
-        "servicios": [],
+        "servicios": [
+          "Horario: 7:30 a.m. 5:00 p.m"
+        ],
         "fotos": [
-          "/img/restaurantes/", 
-          "/img/restaurantes/",
-          "/img/restaurantes/",
-          "/img/restaurantes/"
+          "/img/restaurantes/dona/1.png", 
+          "/img/restaurantes/dona/2.png",
+          "/img/restaurantes/dona/3.png",
+          "/img/restaurantes/dona/4.png"
         ],
       "coordinates": [-8.110578260176112, -79.03494375938848]
     },
     {
       "name": "El Caminito",
-      "image": "",
-      "rating": 0,
-        "ubicacion": "",
+      "image": "/img/restaurantes/el-caminito.png",
+      "rating": 4.0,
+        "ubicacion": "II Etapa, Avenida Juan Pablo III, 511",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": null,
+          "email": null
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Promedio del menu: S/ 20.00"
         ],
-        "servicios": [],
+        "servicios": [
+          "Horario: 10 a.m. - 5 p.m."
+        ],
         "fotos": [
-          "/img/restaurantes/", 
-          "/img/restaurantes/",
-          "/img/restaurantes/",
-          "/img/restaurantes/"
+          "/img/restaurantes/caminito/1.png", 
+          "/img/restaurantes/caminito/2.png",
+          "/img/restaurantes/caminito/3.png",
+          "/img/restaurantes/caminito/4.png"
         ],
       "coordinates": [-8.11704816363951, -79.0381139355797]
     },
     {
       "name": "Agora restaurante",
-      "image": "",
-      "rating": 0,
-        "ubicacion": "",
+      "image": "/img/restaurantes/agora.png",
+      "rating": 4.0,
+        "ubicacion": "Dean Saavedra 321, Trujillo 13008",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": "(044) 245647",
+          "email": null
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Promedio del menu: S/ 12.50"
         ],
-        "servicios": [],
+        "servicios": [
+          "Horario: 11 a.m.–5 p.m."
+        ],
         "fotos": [
-          "/img/restaurantes/", 
-          "/img/restaurantes/",
-          "/img/restaurantes/",
-          "/img/restaurantes/"
+          "/img/restaurantes/agora/1.png", 
+          "/img/restaurantes/agora/2.png",
+          "/img/restaurantes/agora/1.png",
+          "/img/restaurantes/agora/2.png"
         ],
       "coordinates": [-8.115476420831186, -79.03565881487043]
     },
     {
       "name": "Amar restaurante",
-      "image": "",
-      "rating": 0,
-        "ubicacion": "",
+      "image": "/img/restaurantes/amar.png",
+      "rating": 4.8,
+        "ubicacion": "Francisco Solano 462 San Andres",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": "955 020 877",
+          "email": "aldotenorio.cocina@gmail.com"
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Promedio del menu: S/ 40.00"
         ],
-        "servicios": [],
+        "servicios": [
+          "Horario: Martes a Domingos 12 p.m a 12 a.m"
+        ],
         "fotos": [
-          "/img/restaurantes/", 
-          "/img/restaurantes/",
-          "/img/restaurantes/",
-          "/img/restaurantes/"
+          "/img/restaurantes/amar/1.png", 
+          "/img/restaurantes/amar/2.png",
+          "/img/restaurantes/amar/3.png",
+          "/img/restaurantes/amar/4.png"
         ],
       "coordinates": [-8.116925, -79.037367]
     },
     {
       "name": "Mili's",
-      "image": "",
-      "rating": 0,
-        "ubicacion": "",
+      "image": "/img/restaurantes/milis.png",
+      "rating": 4.6,
+        "ubicacion": "Av. Juan Pablo II 355",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": "994 689 516",
+          "email": null
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Promedio del menu: S/ 12.00"
         ],
-        "servicios": [],
+        "servicios": [
+          "Horario: Lunes a Domingo de 10 a.m a 4 p.m"
+        ],
         "fotos": [
-          "/img/restaurantes/", 
-          "/img/restaurantes/",
-          "/img/restaurantes/",
-          "/img/restaurantes/"
+          "/img/restaurantes/milis/1.png", 
+          "/img/restaurantes/milis/2.png",
+          "/img/restaurantes/milis/3.png",
+          "/img/restaurantes/milis/4.png"
         ],
       "coordinates": [-8.115407, -79.036660]
     },
     {
-      "name": "La mamá Toya",
-      "image": "",
-      "rating": 0,
-        "ubicacion": "",
-        "contacto": {
-          "numero": "",
-          "email": ""
-        },
-        "precios": [
-          "", 
-          "", 
-          ""
-        ],
-        "servicios": [],
-        "fotos": [
-          "/img/restaurantes/", 
-          "/img/restaurantes/",
-          "/img/restaurantes/",
-          "/img/restaurantes/"
-        ],
-      "coordinates": [-8.1137356, -79.0348985]
-    },
-    {
-      "name": "Casa Blanca",
-      "image": "",
-      "rating": 0,
-        "ubicacion": "",
-        "contacto": {
-          "numero": "",
-          "email": ""
-        },
-        "precios": [
-          "", 
-          "", 
-          ""
-        ],
-        "servicios": [],
-        "fotos": [
-          "/img/restaurantes/", 
-          "/img/restaurantes/",
-          "/img/restaurantes/",
-          "/img/restaurantes/"
-        ],
-      "coordinates": [-8.1148722, -79.0356824]
-    },
-    {
       "name": "Don Uber",
-      "image": "",
-      "rating": 0,
-        "ubicacion": "",
+      "image": "/img/restaurantes/uber.png",
+      "rating": 4.1,
+        "ubicacion": "Av. Juan Pablo II N°811 Urb. Vista Hermosa, Trujillo, Peru",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": "938 626 072",
+          "email": null
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Promedio del menu: S/ 10.00"
         ],
-        "servicios": [],
+        "servicios": [
+          "Horario: 10 a.m. - 5 p.m."
+        ],
         "fotos": [
-          "/img/restaurantes/", 
-          "/img/restaurantes/",
-          "/img/restaurantes/",
-          "/img/restaurantes/"
+          "/img/restaurantes/uber/1.png", 
+          "/img/restaurantes/uber/2.png",
+          "/img/restaurantes/uber/3.png",
+          "/img/restaurantes/uber/4.png"
         ],
       "coordinates": [-8.119965737808002, -79.04055711809136]
     },
     {
       "name": "Búfalo",
-      "image": "",
-      "rating": 0,
-        "ubicacion": "",
+      "image": "/img/restaurantes/bufalo.png",
+      "rating": 5,
+        "ubicacion": "Calle Francisco Borja 141, urb. La Merced, Trujillo, Peru",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": "(044) 297733",
+          "email": "admbuffalobeef@outlook.com.pe"
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Promedio del menu: S/ 40.00"
         ],
-        "servicios": [],
+        "servicios": [
+          "Horario: Lunes a Domingo de 1 p.m a 12 a.m"
+        ],
         "fotos": [
-          "/img/restaurantes/", 
-          "/img/restaurantes/",
-          "/img/restaurantes/",
-          "/img/restaurantes/"
+          "/img/restaurantes/bufalo/1.png", 
+          "/img/restaurantes/bufalo/2.png",
+          "/img/restaurantes/bufalo/3.png",
+          "/img/restaurantes/bufalo/4.png"
         ],
       "coordinates": [-8.121676652408766, -79.03590412361991]
     },
     {
       "name": "Cuatrero",
-      "image": "",
-      "rating": 0,
-        "ubicacion": "",
+      "image": "/img/restaurantes/cuatrero.png",
+      "rating": 5,
+        "ubicacion": "Calle Francisco Borja 187",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": "(044) 222690",
+          "email": "mkt@elcuatrero.pe"
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Promedio del menu: S/ 35.00"
         ],
-        "servicios": [],
+        "servicios": [
+          "Horario: 12:00 p.m. 6:30 p.m."
+        ],
         "fotos": [
-          "/img/restaurantes/", 
-          "/img/restaurantes/",
-          "/img/restaurantes/",
-          "/img/restaurantes/"
+          "/img/restaurantes/cuatrero/1.png", 
+          "/img/restaurantes/cuatrero/2.png",
+          "/img/restaurantes/cuatrero/3.png",
+          "/img/restaurantes/cuatrero/4.png"
         ],
       "coordinates": [-8.122009502124328, -79.03545673007565]
     },
     {
       "name": "El Uruguayo",
-      "image": "",
-      "rating": 0,
-        "ubicacion": "",
+      "image": "/img/restaurantes/uruguayo.png",
+      "rating": 3.5,
+        "ubicacion": "Av. Larco 1094, Trujillo",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": "44 283369",
+          "email": null
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Promedio del menu: S/ 60.00"
         ],
-        "servicios": [],
+        "servicios": [
+          "Horario: Lunes a Domingo de 6 p.m a 12 p.m"
+        ],
         "fotos": [
-          "/img/restaurantes/", 
-          "/img/restaurantes/",
-          "/img/restaurantes/",
-          "/img/restaurantes/"
+          "/img/restaurantes/uruguayo/1.png", 
+          "/img/restaurantes/uruguayo/2.png",
+          "/img/restaurantes/uruguayo/3.png",
+          "/img/restaurantes/uruguayo/4.png"
         ],
       "coordinates": [-8.1239229, -79.0384219]
     },
     {
       "name": "El Marisco del Amor",
-      "image": "",
-      "rating": 0,
-        "ubicacion": "",
+      "image": "/img/restaurantes/marisco.png",
+      "rating": 3.8,
+        "ubicacion": "Av. Jesús de Nazareth 510 Trujillo, Perú",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": "(044) 201053",
+          "email": "juanavalg@gmail.com"
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Promedio del menu: S/ 25.00"
         ],
-        "servicios": [],
+        "servicios": [
+          "Horario: 7:30 a. m. - 5:00 p. m."
+        ],
         "fotos": [
-          "/img/restaurantes/", 
-          "/img/restaurantes/",
-          "/img/restaurantes/",
-          "/img/restaurantes/"
+          "/img/restaurantes/marisco/1.png", 
+          "/img/restaurantes/marisco/2.png",
+          "/img/restaurantes/marisco/3.png",
+          "/img/restaurantes/marisco/4.png"
         ],
       "coordinates": [-8.1114332, -79.0358046]
     }

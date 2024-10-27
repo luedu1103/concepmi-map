@@ -178,40 +178,62 @@ function onMarkerClick(
   prices,
   services,
   photos,
-  coordinates
+  coordinates,
+  type
 ) {
   // Actualizar la información en el panel
   panelTitle.innerText = name;
   panelImg.src = imgUrl;
   panelRating.innerText = "★".repeat(rating) + ` ${rating}`; // Ejemplo de calificación en estrellas
   panelLocation.innerText = location;
-  document
-    .getElementById("panel-contact-number")
-    .querySelector("span").innerText = ` ${numero}`;
-  document
-    .getElementById("panel-contact-email")
-    .querySelector("span").innerText = ` ${email}`;
+  if (numero != null) {
+    const numeroElement = document.getElementById("panel-contact-number");
+    numeroElement.querySelector("span").innerText = ` ${numero}`;
+    numeroElement.style.display = "";
+  } else {
+    document.getElementById("panel-contact-number").style.display = "none";
+  }
+  if (email != null){
+    const emailElement = document.getElementById("panel-contact-email");
+    emailElement.querySelector("span").innerText = ` ${email}`;
+    emailElement.style.display = "";
+  } else {
+    document.getElementById("panel-contact-email").style.display = "none";
+  }
 
-  const pricesList = document
-    .getElementById("panel-prices")
-    .querySelector("ul");
-  pricesList.innerHTML = "";
-  prices.forEach((price) => {
-    const li = document.createElement("li");
-    li.textContent = price;
-    pricesList.appendChild(li);
-  });
+  if (type == "restaurant" || type == "tourist"){
+    const pricesPanel = document.getElementById("panel-prices");
+    prices.forEach((price) => {
+      pricesPanel.innerText = price;
+    });
 
-  // Agregar servicios al panel
-  const servicesList = document
-    .getElementById("panel-services")
-    .querySelector("ul");
-  servicesList.innerHTML = ""; // Limpiar los servicios previos
-  services.forEach((service) => {
-    const li = document.createElement("li");
-    li.textContent = service;
-    servicesList.appendChild(li);
-  });
+    const servicesPanel = document.getElementById("panel-services");
+    services.forEach((service) => {
+      servicesPanel.innerText = service;
+    });
+  } else {
+    const pricesList = document
+      .getElementById("panel-prices")
+      .querySelector("ul");
+    pricesList.innerHTML = "";
+    prices.forEach((price) => {
+      const li = document.createElement("li");
+      li.textContent = price;
+      pricesList.appendChild(li);
+    });
+
+    // Agregar servicios al panel
+    const servicesList = document
+      .getElementById("panel-services")
+      .querySelector("ul");
+    servicesList.innerHTML = ""; // Limpiar los servicios previos
+    services.forEach((service) => {
+      const li = document.createElement("li");
+      li.textContent = service;
+      servicesList.appendChild(li);
+    });
+  }
+
 
   // Actualizar las fotos
   document.getElementById("photo1").src = photos[0];
@@ -354,7 +376,8 @@ function getHotels() {
             location.precios,
             location.servicios,
             location.fotos,
-            location.coordinates
+            location.coordinates,
+            null
           );
         });
       });
@@ -386,7 +409,8 @@ function getTouristCenters() {
             location.precios,
             location.servicios,
             location.fotos,
-            location.coordinates
+            location.coordinates,
+            "tourist"
           );
         });
       });
@@ -418,7 +442,8 @@ function getRestaurants() {
             location.precios,
             location.servicios,
             location.fotos,
-            location.coordinates
+            location.coordinates,
+            "restaurant"
           );
         });
       });
