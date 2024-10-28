@@ -12,9 +12,9 @@ const panelLocation = document.getElementById("panel-location");
 
 const closePanelBtn = document.getElementById("close-panel");
 
-let hotelVisible = false;
-let touristVisible = false;
-let restaurantVisible = false;
+const restaurantState = { visible: false };
+const hotelState = { visible: false };
+const touristState = { visible: false };
 
 let hotelMarkerList = [];
 let touristMarkerList = [];
@@ -35,46 +35,30 @@ const restaurantsButton = document.getElementById("restaurants-button");
 const hotelsButton = document.getElementById("hotels-button");
 const touristAttractionsButton = document.getElementById("tourist-attractions-button");
 
-restaurantsButton.addEventListener("click", () => {
-  if (restaurantVisible == false) {
-    showAllMarkers(14); 
-    restaurantVisible = true;
-    getRestaurants();
-    restaurantsButton.classList.add("hovered"); // Mantener el estado hovered
+function genericListener(button, state, zoom, getFunc, markerList) {
+  if (state.visible == false) {
+    showAllMarkers(zoom);
+    state.visible = true;
+    getFunc();
+    button.classList.add("hovered");
   } else {
-    restaurantMarkerList.forEach((marker) => marker.remove());
-    restaurantMarkerList = [];
-    restaurantVisible = false;
-    restaurantsButton.classList.remove("hovered"); // Quitar el estado hovered
+    markerList.forEach((marker) => marker.remove());
+    markerList = [];
+    state.visible = false;
+    button.classList.remove("hovered");
   }
+}
+
+restaurantsButton.addEventListener("click", () => {
+  genericListener(restaurantsButton, restaurantState, 14, getRestaurants, restaurantMarkerList);
 });
 
 hotelsButton.addEventListener("click", () => {
-  if (hotelVisible == false) {
-    showAllMarkers(12);
-    hotelVisible = true;
-    getHotels();
-    hotelsButton.classList.add("hovered"); // Mantener el estado hovered
-  } else {
-    hotelMarkerList.forEach((marker) => marker.remove());
-    hotelMarkerList = [];
-    hotelVisible = false;
-    hotelsButton.classList.remove("hovered"); // Quitar el estado hovered
-  }
+  genericListener(hotelsButton, hotelState, 12, getHotels, hotelMarkerList);
 });
 
 touristAttractionsButton.addEventListener("click", () => {
-  if (touristVisible == false) {
-    showAllMarkers(10);
-    touristVisible = true;
-    getTouristCenters();
-    touristAttractionsButton.classList.add("hovered"); // Mantener el estado hovered
-  } else {
-    touristMarkerList.forEach((marker) => marker.remove());
-    touristMarkerList = [];
-    touristVisible = false;
-    touristAttractionsButton.classList.remove("hovered"); // Quitar el estado hovered
-  }
+  genericListener(touristAttractionsButton, touristState, 10, getTouristCenters, touristMarkerList);
 });
 
 mapboxgl.accessToken = API_KEY;
