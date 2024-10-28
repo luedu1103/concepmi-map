@@ -3,7 +3,7 @@
       {
         "name": "Hotel Country Trujillo",
         "image": "/img/hoteles/hotelcountrytrujillo.png",
-        "rating": 7.5,
+        "rating": 3.9,
         "ubicacion": "Av. El Gol 857 - Urb Palmeras del Golf, 130101 Trujillo, Perú",
         "contacto": {
           "numero": "924 788 144",
@@ -19,10 +19,10 @@
         ],
         "servicios": ["Wifi gratis","Pet friendly", "Desayuno (de pago)"],
         "fotos": [
-          "/img/hoteles/hotelcountrytrujillo.png", 
-          "/img/hoteles/hotelcountrytrujillo.png",
-          "/img/hoteles/hotelcountrytrujillo.png",
-          "/img/hoteles/hotelcountrytrujillo.png"
+          "/img/hoteles/country/1.png", 
+          "/img/hoteles/country/2.png",
+          "/img/hoteles/country/3.png",
+          "/img/hoteles/country/4.png"
         ],
         "coordinates": [
           -8.139095260382817,-79.03207238147738
@@ -31,7 +31,7 @@
       {
         "name": "Hotel Costa Andina",
         "image": "/img/hoteles/costaAndina.png",
-        "rating": 7.8,
+        "rating": 4.3,
         "ubicacion": "Calle Arizona 186 Curva de Sun - Moche, Trujillo, Perú",
         "contacto": {
           "numero": "924 867 710 - 924 106 060",
@@ -46,10 +46,10 @@
         ],
         "servicios": ["Wifi gratis","Pet friendly", "Comedor y bar (de pago)"],
         "fotos": [
-          "/img/hoteles/costaAndina.png", 
-          "/img/hoteles/costaAndina.png",
-          "/img/hoteles/costaAndina.png",
-          "/img/hoteles/costaAndina.png"
+          "/img/hoteles/costa/1.png", 
+          "/img/hoteles/costa/2.png",
+          "/img/hoteles/costa/3.png",
+          "/img/hoteles/costa/4.png"
         ],
         "coordinates": [
           -8.1533956,-79.0132961
@@ -58,7 +58,7 @@
       {
         "name": "Hostal la Rivera",
         "image": "/img/hoteles/laRivera.png",
-        "rating": 7.9,
+        "rating": 4.1,
         "ubicacion": "La Ribera 410, Huanchaco, Perú ",
         "contacto": {
           "numero": "948 171 523",
@@ -73,10 +73,10 @@
         ],
         "servicios": ["Wifi gratis","Traslado aeropuerto (de pago)", "Desayuno (de pago)"],
         "fotos": [
-          "/img/hoteles/laRivera.png", 
-          "/img/hoteles/laRivera.png",
-          "/img/hoteles/laRivera.png",
-          "/img/hoteles/laRivera.png"
+          "/img/hoteles/rivera/1.png", 
+          "/img/hoteles/rivera/2.png",
+          "/img/hoteles/rivera/3.png",
+          "/img/hoteles/rivera/4.png"
         ],
         "coordinates": [
           -8.082028, -79.122731
@@ -85,7 +85,7 @@
       {
         "name": "Punta Huanchaco Hotel",
         "image": "/img/hoteles/puntaHuanchaco.png",
-        "rating": 9.4,
+        "rating": 4.9,
         "ubicacion": "Los Ficus 156, Huanchaco, Perú",
         "contacto": {
           "numero": "(044) 520637",
@@ -99,10 +99,10 @@
         ],
         "servicios": ["Wifi gratis","Terraza", "Máquinas arcade/videojuegos"],
         "fotos": [
-          "/img/hoteles/puntaHuanchaco.png", 
-          "/img/hoteles/puntaHuanchaco.png",
-          "/img/hoteles/puntaHuanchaco.png",
-          "/img/hoteles/puntaHuanchaco.png"
+          "/img/hoteles/punta/1.png", 
+          "/img/hoteles/punta/2.png",
+          "/img/hoteles/punta/3.png",
+          "/img/hoteles/punta/4.png"
         ],
         "coordinates": [
           -8.082703, -79.121620
@@ -111,7 +111,7 @@
       {
         "name": "Hotel Sol de Huanchaco",
         "image": "/img/hoteles/hotel-sol-de-huanchaco.png",
-        "rating": 8.1,
+        "rating": 4.3,
         "ubicacion": "Los Robles 212 Huanchaco, Perú ",
         "contacto": {
           "numero": "(44) 301814",
@@ -125,10 +125,10 @@
         ],
         "servicios": ["Wifi gratis","Terraza", "Lavandería (de pago)"],
         "fotos": [
-          "/img/hoteles/hotel-sol-de-huanchaco.png", 
-          "/img/hoteles/hotel-sol-de-huanchaco.png",
-          "/img/hoteles/hotel-sol-de-huanchaco.png",
-          "/img/hoteles/hotel-sol-de-huanchaco.png"
+          "/img/hoteles/sol/1.png", 
+          "/img/hoteles/sol/2.png",
+          "/img/hoteles/sol/3.png",
+          "/img/hoteles/sol/4.png"
         ],
         "coordinates": [
           -8.0818874,-79.1210546
@@ -137,7 +137,7 @@
       {
         "name": "Hostal Solari",
         "image": "/img/hoteles/hostal-solari.png",
-        "rating": 8.5,
+        "rating": 4.0,
         "ubicacion": "Jr. Diego de Almagro 715 - Centro Histórico, Trujillo, Perú",
         "contacto": {
           "numero": "948 204 462",
@@ -151,10 +151,10 @@
         ],
         "servicios": ["Wifi gratis","Servicio de habitaciones", "Traslado aeropuerto (de pago)"],
         "fotos": [
-          "/img/hoteles/hostal-solari.png", 
-          "/img/hoteles/hostal-solari.png",
-          "/img/hoteles/hostal-solari.png",
-          "/img/hoteles/hostal-solari.png"
+          "/img/hoteles/solari/1.png", 
+          "/img/hoteles/solari/2.png",
+          "/img/hoteles/solari/3.png",
+          "/img/hoteles/solari/4.png"
         ],
         "coordinates": [
           -8.1144957,-79.0270703
@@ -176,10 +176,10 @@
         ],
         "servicios": ["Wifi gratis","Desayuno de cortesía", "Traslado aeropuerto (de pago)", "Aire acondicionado"],
         "fotos": [
-          "/img/hoteles/hotel-central.png", 
-          "/img/hoteles/hotel-central.png",
-          "/img/hoteles/hotel-central.png",
-          "/img/hoteles/hotel-central.png"
+          "/img/hoteles/central/1.png", 
+          "/img/hoteles/central/2.png",
+          "/img/hoteles/central/3.png",
+          "/img/hoteles/central/4.png"
         ],
         "coordinates": [
           -8.1140384,-79.0283055
@@ -201,10 +201,10 @@
         ],
         "servicios": ["Wifi gratis", "Traslado aeropuerto (de pago)", "Desayuno (de pago)"],
         "fotos": [
-          "/img/hoteles/lesaint.png", 
-          "/img/hoteles/lesaint.png",
-          "/img/hoteles/lesaint.png",
-          "/img/hoteles/lesaint.png"
+          "/img/hoteles/saint/1.png", 
+          "/img/hoteles/saint/2.png",
+          "/img/hoteles/saint/3.png",
+          "/img/hoteles/saint/4.png"
         ],
         "coordinates": [
           -8.1149853,-79.0343702
@@ -226,10 +226,10 @@
         ],
         "servicios": ["Wifi gratis", "Traslado aeropuerto (de pago)", "Desayuno (de pago)"],
         "fotos": [
-          "/img/hoteles/ivanka-hostel.png", 
-          "/img/hoteles/ivanka-hostel.png",
-          "/img/hoteles/ivanka-hostel.png",
-          "/img/hoteles/ivanka-hostel.png"
+          "/img/hoteles/ivanka/1.png", 
+          "/img/hoteles/ivanka/2.png",
+          "/img/hoteles/ivanka/3.png",
+          "/img/hoteles/ivanka/4.png"
         ],
         "coordinates": [
           -8.1084852,-79.0317485
@@ -251,10 +251,10 @@
         ],
         "servicios": ["Wifi gratis", "Traslado aeropuerto (de pago)", "Servicio de habitaciones"],
         "fotos": [
-          "/img/hoteles/hostal-el-pillkay.png", 
-          "/img/hoteles/hostal-el-pillkay.png",
-          "/img/hoteles/hostal-el-pillkay.png",
-          "/img/hoteles/hostal-el-pillkay.png"
+          "/img/hoteles/pillkay/1.png", 
+          "/img/hoteles/pillkay/2.png",
+          "/img/hoteles/pillkay/3.png",
+          "/img/hoteles/pillkay/4.png"
         ],
         "coordinates": [
           -8.107209, -79.024201
@@ -276,10 +276,10 @@
         ],
         "servicios": ["Wifi gratis", "Desayuno (incluido)", "Traslado aeropuerto (de pago)", "Servicio de lavandería"],
         "fotos": [
-          "/img/hoteles/aypa-hostal.png", 
-          "/img/hoteles/aypa-hostal.png",
-          "/img/hoteles/aypa-hostal.png",
-          "/img/hoteles/aypa-hostal.png"
+          "/img/hoteles/aypa/1.png", 
+          "/img/hoteles/aypa/2.png",
+          "/img/hoteles/aypa/3.png",
+          "/img/hoteles/aypa/4.png"
         ],
         "coordinates": [
           -8.1072177,-79.0322626
@@ -301,10 +301,10 @@
         ],
         "servicios": ["Wifi gratis", "Gimnasio", "Restaurante"],
         "fotos": [
-          "/img/hoteles/las-mercedes.png", 
-          "/img/hoteles/las-mercedes.png",
-          "/img/hoteles/las-mercedes.png",
-          "/img/hoteles/las-mercedes.png"
+          "/img/hoteles/mercedes/1.png", 
+          "/img/hoteles/mercedes/2.png",
+          "/img/hoteles/mercedes/3.png",
+          "/img/hoteles/mercedes/4.png"
         ],
         "coordinates": [
           -8.108570443454823,-79.02460662521436
@@ -326,10 +326,10 @@
         ],
         "servicios": ["Wifi gratis", "Desayuno (incluido)", "Traslado aeropuerto (de pago)", "Restaurante"],
         "fotos": [
-          "/img/hoteles/recreo-hotel.png", 
-          "/img/hoteles/recreo-hotel.png",
-          "/img/hoteles/recreo-hotel.png",
-          "/img/hoteles/recreo-hotel.png"
+          "/img/hoteles/recreo/1.png", 
+          "/img/hoteles/recreo/2.png",
+          "/img/hoteles/recreo/3.png",
+          "/img/hoteles/recreo/4.png"
         ],
         "coordinates": [
           -8.1085886,-79.0229589
@@ -349,10 +349,10 @@
         ],
         "servicios": ["Servicio de habitaciones", "TV de pantalla plana"],
         "fotos": [
-          "/img/hoteles/vista-hermosa.png", 
-          "/img/hoteles/vista-hermosa.png",
-          "/img/hoteles/vista-hermosa.png",
-          "/img/hoteles/vista-hermosa.png"
+          "/img/hoteles/vista/1.png", 
+          "/img/hoteles/vista/2.png",
+          "/img/hoteles/vista/3.png",
+          "/img/hoteles/vista/4.png"
         ],
         "coordinates": [
           -8.119947, -79.043592
