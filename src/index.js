@@ -31,46 +31,51 @@ function showAllMarkers(zoom) {
   });
 }
 
-document.getElementById("restaurants-button").addEventListener("click", () => {
-  showAllMarkers(14);
+const restaurantsButton = document.getElementById("restaurants-button");
+const hotelsButton = document.getElementById("hotels-button");
+const touristAttractionsButton = document.getElementById("tourist-attractions-button");
+
+restaurantsButton.addEventListener("click", () => {
   if (restaurantVisible == false) {
+    showAllMarkers(14); 
     restaurantVisible = true;
     getRestaurants();
+    restaurantsButton.classList.add("hovered"); // Mantener el estado hovered
   } else {
-    showAllMarkers(16);
     restaurantMarkerList.forEach((marker) => marker.remove());
     restaurantMarkerList = [];
     restaurantVisible = false;
+    restaurantsButton.classList.remove("hovered"); // Quitar el estado hovered
   }
 });
 
-document.getElementById("hotels-button").addEventListener("click", () => {
-  showAllMarkers(12);
+hotelsButton.addEventListener("click", () => {
   if (hotelVisible == false) {
+    showAllMarkers(12);
     hotelVisible = true;
     getHotels();
+    hotelsButton.classList.add("hovered"); // Mantener el estado hovered
   } else {
-    showAllMarkers(16);
     hotelMarkerList.forEach((marker) => marker.remove());
     hotelMarkerList = [];
     hotelVisible = false;
+    hotelsButton.classList.remove("hovered"); // Quitar el estado hovered
   }
 });
 
-document
-  .getElementById("tourist-attractions-button")
-  .addEventListener("click", () => {
-    if (touristVisible == false) {
-      showAllMarkers(10);
-      touristVisible = true;
-      getTouristCenters();
-    } else {
-      showAllMarkers(16);
-      touristMarkerList.forEach((marker) => marker.remove());
-      touristMarkerList = [];
-      touristVisible = false;
-    }
-  });
+touristAttractionsButton.addEventListener("click", () => {
+  if (touristVisible == false) {
+    showAllMarkers(10);
+    touristVisible = true;
+    getTouristCenters();
+    touristAttractionsButton.classList.add("hovered"); // Mantener el estado hovered
+  } else {
+    touristMarkerList.forEach((marker) => marker.remove());
+    touristMarkerList = [];
+    touristVisible = false;
+    touristAttractionsButton.classList.remove("hovered"); // Quitar el estado hovered
+  }
+});
 
 mapboxgl.accessToken = API_KEY;
 const map = new Map({
@@ -181,70 +186,94 @@ function onMarkerClick(
   coordinates,
   type
 ) {
-  // Actualizar la información en el panel
+  // Update the panel information
   panelTitle.innerText = name;
   panelImg.src = imgUrl;
-  panelRating.innerText = "★".repeat(rating) + ` ${rating}`; // Ejemplo de calificación en estrellas
   panelLocation.innerText = location;
-  if (numero != null) {
-    const numeroElement = document.getElementById("panel-contact-number");
-    numeroElement.querySelector("span").innerText = ` ${numero}`;
+
+  // Display rating or hide if zero
+  if (rating !== 0) {
+    panelRating.innerText = "★".repeat(rating) + ` ${rating}`;
+    panelRating.style.display = "";
+  } else {
+    panelRating.style.display = "none";
+  }
+
+  // Handle contact information visibility
+  const numeroElement = document.getElementById("panel-contact-number");
+  const emailElement = document.getElementById("panel-contact-email");
+
+  if (numero) {
+    numeroElement.querySelector("span").innerText = numero;
     numeroElement.style.display = "";
   } else {
-    document.getElementById("panel-contact-number").style.display = "none";
+    numeroElement.style.display = "none";
   }
-  if (email != null){
-    const emailElement = document.getElementById("panel-contact-email");
-    emailElement.querySelector("span").innerText = ` ${email}`;
+
+  if (email) {
+    emailElement.querySelector("span").innerText = email;
     emailElement.style.display = "";
   } else {
-    document.getElementById("panel-contact-email").style.display = "none";
+    emailElement.style.display = "none";
   }
 
-  if (type == "restaurant" || type == "tourist"){
-    const pricesPanel = document.getElementById("panel-prices");
-    prices.forEach((price) => {
-      pricesPanel.innerText = price;
-    });
+  const pricesPanel = document.getElementById("panel-prices");
+  const servicesPanel = document.getElementById("panel-services");
+  pricesPanel.innerHTML = "";
+  servicesPanel.innerHTML = "";
 
-    const servicesPanel = document.getElementById("panel-services");
-    services.forEach((service) => {
-      servicesPanel.innerText = service;
-    });
-  } else {
-    const pricesList = document
-      .getElementById("panel-prices")
-      .querySelector("ul");
-    pricesList.innerHTML = "";
-    prices.forEach((price) => {
-      const li = document.createElement("li");
-      li.textContent = price;
-      pricesList.appendChild(li);
-    });
+  const pricesTitle = document.createElement("p");
+  pricesTitle.innerText = "Precios:";
+  pricesTitle.className = "panel-prices-title";
+  const servicesTitle = document.createElement("p");
+  servicesTitle.innerText = "Servicios:";
+  servicesTitle.className = "panel-services-title";
+  const activitiesTitle = document.createElement("p");
+  activitiesTitle.innerText = "Actividades:"
+  activitiesTitle.className = "panel-services-title";
 
-    // Agregar servicios al panel
-    const servicesList = document
-      .getElementById("panel-services")
-      .querySelector("ul");
-    servicesList.innerHTML = ""; // Limpiar los servicios previos
+  if (type === "restaurant") {
+    pricesPanel.innerText = prices.join(", ");
+
+    servicesPanel.innerText = services.join(", ");
+  } else if (type == "tourist"){
+    pricesPanel.innerText = prices.join(", ");
+    
+    servicesPanel.appendChild(activitiesTitle);
+    const servicesList = document.createElement("ul");
     services.forEach((service) => {
       const li = document.createElement("li");
       li.textContent = service;
       servicesList.appendChild(li);
     });
+    servicesPanel.appendChild(servicesList);
+  } else {
+    pricesPanel.appendChild(pricesTitle);
+    const pricesList = document.createElement("ul");
+    prices.forEach((price) => {
+      const li = document.createElement("li");
+      li.textContent = price;
+      pricesList.appendChild(li);
+    });
+    pricesPanel.appendChild(pricesList);
+
+    servicesPanel.appendChild(servicesTitle);
+    const servicesList = document.createElement("ul");
+    services.forEach((service) => {
+      const li = document.createElement("li");
+      li.textContent = service;
+      servicesList.appendChild(li);
+    });
+    servicesPanel.appendChild(servicesList);
   }
 
-
-  // Actualizar las fotos
   document.getElementById("photo1").src = photos[0];
   document.getElementById("photo2").src = photos[1];
   document.getElementById("photo3").src = photos[2];
   document.getElementById("photo4").src = photos[3];
 
-  // Mostrar el panel
   showPanel();
 
-  // Asignar el evento al botón de direcciones
   const directionsButton = document.getElementById("directions-button");
   directionsButton.onclick = () => {
     getRoute(coordinates);
@@ -377,7 +406,7 @@ function getHotels() {
             location.servicios,
             location.fotos,
             location.coordinates,
-            null
+            "hotel"
           );
         });
       });

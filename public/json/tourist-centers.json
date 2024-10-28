@@ -4,22 +4,26 @@
         "name": "Plaza de Armas",
         "image": "/img/centros-turisticos/plaza.png",
         "rating": 0,
-        "ubicacion": "",
+        "ubicacion": "VXQC+7H Trujillo",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": null,
+          "email": null
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Historia: La Plaza de Armas de Trujillo es el espacio público más antiguo de la ciudad, fundada en 1534. Fue el sitio donde se proclamó la independencia del departamento en 1820. El principal atractivo es el Monumento a la Libertad, una obra del escultor alemán Edmund Möeller, que simboliza los valores de la abundancia, ciencia, comercio y salud en su primer nivel, el drama de la libertad en el segundo, y la juventud en el tercer nivel."
         ],
-        "servicios": [],
+        "servicios": [
+          "Visitar la Catedral de Trujillo y otros edificios históricos alrededor.",
+          "Observar y fotografiar el Monumento a la Libertad.",
+          "Disfrutar de desfiles de caballos y carruajes los domingos por la mañana.",
+          "Participar en eventos culturales y festivales locales.",
+          "Probar la gastronomía local en los locales ubicados en los alrededores."
+        ],
         "fotos": [
-          "/img/centros-turisticos/", 
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/"
+          "/img/centros-turisticos/plaza/1.png", 
+          "/img/centros-turisticos/plaza/2.png",
+          "/img/centros-turisticos/plaza/3.png",
+          "/img/centros-turisticos/plaza/4.png"
         ],
         "coordinates": [
           -8.1117493,-79.0286009
@@ -29,22 +33,24 @@
         "name": "Casa de la Emancipación",
         "image": "/img/centros-turisticos/emancipación.png",
         "rating": 0,
-        "ubicacion": "",
+        "ubicacion": "Jr. Gamarra, Trujillo 13001",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": null,
+          "email": null
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Historia: Construida en 1645, la Casa de la Emancipación desempeñó un papel crucial en la independencia del Perú. Fue aquí donde, el 29 de diciembre de 1820, se proclamó la independencia de Trujillo. Declarado monumento histórico en 1971, alberga exposiciones sobre el poeta César Vallejo y el obispo Baltasar Jaime Martínez de Compañón, en su interior se encuentran pinturas de estilo rococó del siglo XVII. "
         ],
-        "servicios": [],
+        "servicios": [
+          "Recorridos por la casa para apreciar su arquitectura y exposiciones. ",
+          "Exposiciones artísticas y culturales, tanto permanentes como temporales. ",
+          "Eventos culturales, como conferencias y presentaciones artísticas. "
+        ],
         "fotos": [
-          "/img/centros-turisticos/", 
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/"
+          "/img/centros-turisticos/casa-emancipacion/1.png", 
+          "/img/centros-turisticos/casa-emancipacion/2.png",
+          "/img/centros-turisticos/casa-emancipacion/3.png",
+          "/img/centros-turisticos/casa-emancipacion/4.png"
         ],
         "coordinates": [
             -8.11063,-79.0264087
@@ -54,22 +60,25 @@
         "name": "Museo Arqueológico de la UNT",
         "image": "/img/centros-turisticos/museo-unt.png",
         "rating": 0,
-        "ubicacion": "",
+        "ubicacion": "Jr. Junin 682, Trujillo 13001",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": null,
+          "email": null
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Historia: El Museo de Arqueología, Antropología e Historia de la UNT fue inaugurado en 1939 y se dedica a la preservación y exhibición de objetos históricos y culturales que reflejan la rica herencia precolombina y colonial de la región. Además, el museo alberga una impresionante colección de momias y artefactos funerarios destaca la cerámica Moche y los artefactos de oro y plata de la cultura Chimú. "
         ],
-        "servicios": [],
+        "servicios": [
+          "Visitas guiadas para conocer las colecciones y la historia de las culturas precolombinas. Disponibles en español e inglés.",
+          "Exposiciones temporales, a lo largo del año, el museo organiza exposiciones temporales sobre diversos temas relacionados con la arqueología y la historia local. ",
+          "Talleres educativos y conferencias sobre arqueología y antropología.",
+          "Conferencias y Seminarios para el alumnado y externos. "
+        ],
         "fotos": [
-          "/img/centros-turisticos/", 
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/"
+          "/img/centros-turisticos/museo/1.png", 
+          "/img/centros-turisticos/museo/2.png",
+          "/img/centros-turisticos/museo/3.png",
+          "/img/centros-turisticos/museo/4.png"
         ],
         "coordinates": [
           -8.1108828,-79.0242538
@@ -79,22 +88,24 @@
         "name": "Museo de Juguetes",
         "image": "/img/centros-turisticos/museo-juguetes.png",
         "rating": 0,
-        "ubicacion": "",
+        "ubicacion": "Trujillo 13001, PERÚ",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": null,
+          "email": null
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Historia: Inaugurado en 2001 por el coleccionista César Benavides, el Museo del Juguete es el primero de su tipo en Perú y Latinoamérica. El museo alberga una colección de más de 5,000 juguetes de diferentes épocas y partes del mundo, que van desde el siglo XIX hasta el siglo XX. Su misión es rescatar y preservar la historia y cultura del juego infantil, ofreciendo una mirada nostálgica y educativa a través de los tiempos. "
         ],
-        "servicios": [],
+        "servicios": [
+          "Recorridos para Apreciar la Colección: Los visitantes pueden recorrer las diversas salas del museo para admirar la colección de juguetes.",
+          "Exposiciones Temporales: El museo organiza exposiciones temáticas temporales que exploran diferentes aspectos de la historia del juguete y la infancia.",
+          "Talleres y Actividades Lúdicas: Especialmente dirigidos a niños, estos talleres fomentan la creatividad y la interacción a través del juego."
+        ],
         "fotos": [
-          "/img/centros-turisticos/", 
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/"
+          "/img/centros-turisticos/juguetes/1.png", 
+          "/img/centros-turisticos/juguetes/2.png",
+          "/img/centros-turisticos/juguetes/3.png",
+          "/img/centros-turisticos/juguetes/4.png"
         ],
         "coordinates": [
           -8.1083536,-79.0266418
@@ -104,22 +115,25 @@
         "name": "Jardín Botánico de Trujillo",
         "image": "/img/centros-turisticos/jardin-trujillo.png",
         "rating": 0,
-        "ubicacion": "",
+        "ubicacion": "Trujillo 13008, PERÚ",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": null,
+          "email": null
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Historia: El Jardín Botánico de Trujillo, inaugurado en 1992, conserva más de 200 especies de plantas nativas y exóticas. Sus áreas temáticas incluyen jardines de cactus, plantas medicinales y orquídeas. Este espacio promueve la conservación, la educación ambiental y es un refugio para aves locales, destacando la importancia de la biodiversidad."
         ],
-        "servicios": [],
+        "servicios": [
+          "Recorridos guiados diarios.",
+          "Talleres de jardinería y conservación.",
+          "Áreas de picnic y juegos infantiles.",
+          "Eventos culturales como exposiciones y conciertos."
+        ],
         "fotos": [
-          "/img/centros-turisticos/", 
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/"
+          "/img/centros-turisticos/botanico/1.png", 
+          "/img/centros-turisticos/botanico/2.png",
+          "/img/centros-turisticos/botanico/3.png",
+          "/img/centros-turisticos/botanico/4.png"
         ],
         "coordinates": [
           -8.1250383,-79.0369796
@@ -129,22 +143,25 @@
         "name": "Huaca del Sol y la Luna",
         "image": "/img/centros-turisticos/huaca-sol-luna.png",
         "rating": 0,
-        "ubicacion": "",
+        "ubicacion": "Trujillo 13001, PERÚ",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": null,
+          "email": null
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Historia: La Huaca del Sol y la Luna es un complejo arqueológico Moche del I al VIII d.C. La Huaca del Sol, una gran pirámide de adobe, se usaba para fines administrativos y ceremoniales. La Huaca de la Luna, más pequeña y mejor conservada, presenta murales y decoraciones que muestran escenas mitológicas. El sitio revela detalles sobre la vida y religión de los Moche."
         ],
-        "servicios": [],
+        "servicios": [
+          "Recorridos guiados: Los visitantes pueden participar en recorridos guiados que ofrecen una visión detallada de la historia y arqueología del sitio.",
+          "Exposiciones temporales: El museo del sitio organiza exposiciones temporales sobre diferentes aspectos de la cultura Moche.",
+          "Talleres educativos",
+          "Eventos especiales"
+        ],
         "fotos": [
-          "/img/centros-turisticos/", 
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/"
+          "/img/centros-turisticos/huaca/1.png", 
+          "/img/centros-turisticos/huaca/2.png",
+          "/img/centros-turisticos/huaca/3.png",
+          "/img/centros-turisticos/huaca/4.png"
         ],
         "coordinates": [
           -8.1318668,-78.9971083
@@ -154,22 +171,25 @@
         "name": "Complejo Arqueológico El Brujo",
         "image": "/img/centros-turisticos/el-brujo.png",
         "rating": 0,
-        "ubicacion": "",
+        "ubicacion": "3MPW+8G Balneario El Brujo",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": null,
+          "email": null
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Historia: El Complejo Arqueológico El Brujo es uno de los sitios más importantes de la cultura Moche. Incluye varias estructuras, entre las que destaca la Huaca Cao Viejo, famosa por sus impresionantes murales y la tumba de la Señora de Cao, una gobernante moche que fue descubierta en 2006. El sitio proporciona una visión única de la sociedad Moche, su estructura política y sus prácticas religiosas. "
         ],
-        "servicios": [],
+        "servicios": [
+          "Recorridos guiados, los guías son expertos en la cultura Moche y pueden proporcionar información valiosa y respuestas a las preguntas de los visitantes. ",
+          "Exposiciones temporales, mostrando artefactos recientemente descubiertos.",
+          "Talleres sobre arqueología y técnicas de conservación.",
+          "Eventos especiales como recreaciones históricas y festivales culturales que celebran la herencia de la cultura Moche. "
+        ],
         "fotos": [
-          "/img/centros-turisticos/", 
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/"
+          "/img/centros-turisticos/brujo/1.png", 
+          "/img/centros-turisticos/brujo/2.png",
+          "/img/centros-turisticos/brujo/3.png",
+          "/img/centros-turisticos/brujo/4.png"
         ],
         "coordinates": [
           -7.9142046,-79.303688
@@ -179,22 +199,25 @@
         "name": "Chan Chan",
         "image": "/img/centros-turisticos/chan-chan.png",
         "rating": 0,
-        "ubicacion": "",
+        "ubicacion": "VWVG+Q5C, Huanchaco",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": null,
+          "email": null
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Historia: Chan Chan fue la capital del reino Chimú y es la ciudad de adobe más grande de América. Construida alrededor del año 850 d.C., alcanzó su apogeo en el siglo XV antes de ser conquistada por los Incas. La arquitectura de Chan Chan es notable por sus altos muros decorados con frisos y relieves que representan animales, patrones geométricos y escenas míticas. "
         ],
-        "servicios": [],
+        "servicios": [
+          "Visitas Guiadas: Puedes recorrer la ciudadela con un guía que te explicará la historia y la arquitectura del lugar detalladamente.",
+          "Museo de Sitio: Visita el museo para ver artefactos y aprender más sobre la cultura Chimú",
+          "Fotografía: Captura imágenes de los impresionantes relieves y estructuras de adobe",
+          "Talleres y Exposiciones: Participa en talleres de artesanía y exposiciones culturales"
+        ],
         "fotos": [
-          "/img/centros-turisticos/", 
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/"
+          "/img/centros-turisticos/chan/1.png", 
+          "/img/centros-turisticos/chan/2.png",
+          "/img/centros-turisticos/chan/3.png",
+          "/img/centros-turisticos/chan/4.png"
         ],
         "coordinates": [
           -8.106303, -79.074793
@@ -204,22 +227,25 @@
         "name": "Balneario de Huanchaco",
         "image": "/img/centros-turisticos/huanchaco.png",
         "rating": 0,
-        "ubicacion": "",
+        "ubicacion": "Balneario Huanchaco",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": null,
+          "email": null
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Historia: Huanchaco es un balneario con una rica historia que se remonta a la época precolombina. Fue un importante puerto de la civilización Chimú y luego utilizado por los Incas. Durante muchos años, operó como uno de los principales puertos de la región. El nombre Huanchaco deriva de 'guaukocha', que se traduce como 'Hermosa laguna con peces dorados'. Es famoso por sus 'caballitos de totora', embarcaciones que han sido utilizadas por los pescadores locales."
         ],
-        "servicios": [],
+        "servicios": [
+          "Paseos en caballitos de totora: Una experiencia única para conocer la tradición ancestral. ",
+          "Surf: Huanchaco es un destino popular para surfistas de todo el mundo.",
+          "Visita al Muelle: Un lugar perfecto para pasear y disfrutar de la vista al mar.",
+          "Visita a sitios arqueológicos cercanos: Como Chan Chan y el Templo del Sol y la Luna."
+        ],
         "fotos": [
-          "/img/centros-turisticos/", 
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/"
+          "/img/centros-turisticos/huanchaco/1.png", 
+          "/img/centros-turisticos/huanchaco/2.png",
+          "/img/centros-turisticos/huanchaco/3.png",
+          "/img/centros-turisticos/huanchaco/4.png"
         ],
         "coordinates": [
           -8.075037, -79.119258
@@ -229,22 +255,24 @@
         "name": "Jardín de los Sentidos",
         "image": "/img/centros-turisticos/jardin-sentidos.png",
         "rating": 0,
-        "ubicacion": "",
+        "ubicacion": "La Libertad 185, Laredo",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": null,
+          "email": null
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Historia: El Jardín de los Sentidos nace como una idea de un peruano llamado Raúl Silva, que luego de haber realizado varios viajes se inspiró y decidió crear un espacio especial para personas con discapacidad visual. Se pensó en el jardín como un museo y de esa forma comenzó a crear lo que es un sitio que dejará una huella en la historia del Perú, y al día de hoy tiene más de 30 años dentro del territorio Trujillano."
         ],
-        "servicios": [],
+        "servicios": [
+          "Caminatas sensoriales: Recorridos guiados donde se invita a los visitantes a explorar el jardín utilizando los sentidos de la vista, el olfato, el oído, el tacto y el gusto (si corresponde).",
+          "Actividades artísticas: Pintura o dibujo al aire libre inspirados en el entorno natural, permitiendo que las personas se conecten con su creatividad.",
+          "Picnics familiares: Disfrutar de un día relajado con familia o amigos, compartiendo un picnic en medio de un ambiente tranquilo y natural."
+        ],
         "fotos": [
-          "/img/centros-turisticos/", 
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/"
+          "/img/centros-turisticos/sentidos/1.png", 
+          "/img/centros-turisticos/sentidos/2.png",
+          "/img/centros-turisticos/sentidos/3.png",
+          "/img/centros-turisticos/sentidos/4.png"
         ],
         "coordinates": [
           -8.1128788,-78.9917919
@@ -254,22 +282,24 @@
         "name": "Cerro Campana",
         "image": "/img/centros-turisticos/cerro-campana.png",
         "rating": 0,
-        "ubicacion": "",
+        "ubicacion": "Cerro campana",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": null,
+          "email": null
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Historia: Se dice del Cerro Campana que es un Apu, denominación quechua que implica señorío. Se trata de un concepto ancestral que atribuye a ciertos espacios geográficos una suerte de cualidades vivientes e influencia directa en los ciclos vitales de la zona que dominan. Estudios relativamente recientes señalan que la montaña fue escenario de sacrificios humanos que formaron parte del ímpetu religioso de la Cultura Mochica hace unos 1 600 años."
         ],
-        "servicios": [],
+        "servicios": [
+          "Recorridos por senderos naturales: El Cerro Campana ofrece rutas de diferentes niveles de dificultad para quienes disfrutan de las caminatas y el senderismo. ",
+          "El Cerro Campana es conocido por sus formaciones rocosas, lo que lo convierte en un destino atractivo para los escaladores. Hay zonas específicas donde los más experimentados pueden practicar escalada en roca.",
+          "Para los amantes del ciclismo de montaña, el Cerro Campana ofrece rutas emocionantes con diferentes niveles de dificultad."
+        ],
         "fotos": [
-          "/img/centros-turisticos/", 
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/"
+          "/img/centros-turisticos/cerro/1.png", 
+          "/img/centros-turisticos/cerro/2.png",
+          "/img/centros-turisticos/cerro/3.png",
+          "/img/centros-turisticos/cerro/4.png"
         ],
         "coordinates": [
           -7.9642492,-79.1101027
@@ -279,22 +309,25 @@
         "name": "Lagunda de Conache",
         "image": "/img/centros-turisticos/laguna-conache.png",
         "rating": 0,
-        "ubicacion": "",
+        "ubicacion": "Laguna Conache",
         "contacto": {
-          "numero": "",
-          "email": ""
+          "numero": null,
+          "email": null
         },
         "precios": [
-          "", 
-          "", 
-          ""
+          "Historia: La Laguna de Conache es una laguna natural que se ha convertido en un popular destino turístico local. Es conocida por su entorno pintoresco y las dunas de arena que la rodean. Durante la época precolombina, la laguna y sus alrededores fueron utilizados por las culturas locales para la agricultura y la pesca. Hoy en día, es un lugar popular para actividades recreativas como el sandboarding y la natación, además de ser un sitio atractivo para la observación de aves y otras especies locales. "
         ],
-        "servicios": [],
+        "servicios": [
+          "Sandboarding: Las dunas de arena alrededor de la laguna son ideales para practicar este deporte.",
+          "Natación y paseos en bote: Los visitantes pueden nadar en la laguna o alquilar botes pequeños para pasear por el agua. ",
+          "Pesca recreativa: Es posible pescar en la laguna, con especies locales disponibles. ",
+          "Observación de aves: La laguna es hogar de diversas especies de aves, lo que la convierte en un lugar excelente para la observación de fauna. "
+        ],
         "fotos": [
-          "/img/centros-turisticos/", 
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/",
-          "/img/centros-turisticos/"
+          "/img/centros-turisticos/laguna/1.png", 
+          "/img/centros-turisticos/laguna/2.png",
+          "/img/centros-turisticos/laguna/3.png",
+          "/img/centros-turisticos/laguna/4.png"
         ],
         "coordinates": [
           -8.127712, -78.953359

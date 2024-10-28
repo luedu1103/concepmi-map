@@ -46,6 +46,11 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.hovered {
+    background-color: #ff610f; /* Color de fondo en hover */
+    color: white; /* Color del texto en hover */
+}
+
 #logo-container {
     position: fixed;
     bottom: 10px;
